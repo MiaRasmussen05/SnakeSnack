@@ -6,6 +6,14 @@ It is for every person that wants either a hit of nostalgia or just a fun easy g
 
 ## __User Stories__
 
+- ### First Time Visitor Goals
+
+    - I want to be able to navigate the website without any problems.
+    - I want to be able to read the rules.
+    - I will be able to play the snake game.
+    - I will be able to learn about the creator and project.
+    - I would be able to contact the creator with any inquiries.
+
 ## __Design__
 
 ### __Features__
