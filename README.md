@@ -78,6 +78,18 @@ It is for every person that wants either a hit of nostalgia or just a fun easy g
 
 ### __Wireframes__
 
+[The Home Page - Wireframe](./readmeimages/wireframes/homewireframes.png)
+
+[The Settings - Wireframe](./readmeimages/wireframes/settingswireframes.png)
+
+[The Rules Modal - Wireframe](./readmeimages/wireframes/ruleswireframes.png)
+
+[The About Page - Wireframe](./readmeimages/wireframes/aboutwireframes.png)
+
+[The Contact Page - Wireframe](./readmeimages/wireframes/contactwireframes.png)
+
+[The Game Page - Wireframe](./readmeimages/wireframes/gamewireframes.png)
+
 ### __Imagery__
 
 ## __Testing__
