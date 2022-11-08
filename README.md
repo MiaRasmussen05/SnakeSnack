@@ -50,6 +50,15 @@ It is for every person that wants either a hit of nostalgia or just a fun easy g
     - The send button then send the visitor to another page with a pop up window that needs to be clicked. Then they get a thank you that their message have been submited and with a link to go back to the home page.
     - On medium screens the two boxes jump beside each other above the form. On smaller screen they go on each other to keep it fully responsive and easy to read.
 
+  - ### Game Page
+    - The game page has the game board in the middle of the screen inside the card shape. With the clickable controls on the right side and the pause button on the left corner right next to the game. Score board above the game.
+    - The game board is in a light green color to simulat grass, and the border is made up from an images that looks like a bush is inclosing the game. 
+    - The score board above the game shows the score number that goes up with the food that gets eaten. It shows the hightscore of the player and saves it in their local storage.
+    - The clickable buttons to the right is fully responsive with hover effects that shows they are clickable. With different colors for each of the four control buttons arrows.
+    - On the game page the page links are gone and the logo is used to go back to the home page. 
+    - On smaller screens the controls are moved under the game board and the game board fills out the width out the screen under the logo. The pause button stays to the bottom on the left side above the footer. 
+    - When the game is over, a game over message comes to the pages with a responsive restart button instead of it showing the board.
+
 ### __Typography and Color Scheme__
 
 - ### Typography
