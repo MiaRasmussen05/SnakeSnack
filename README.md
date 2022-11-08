@@ -67,8 +67,14 @@ It is for every person that wants either a hit of nostalgia or just a fun easy g
 ### __Typography and Color Scheme__
 
 - ### Typography
+  - There where used easy readable fonts. For the headings 'Cormorant' with the secondary font of sans-serif.
+  - For the normal writing on all pages there where used the font of 'Roboto' with the secondary font of sans-serif, to match the headigs. The Footer got the font of 'Nunito' also with the sans-serif as its secondary font.
+  - These fonts where all choosen for good readabilty and the matching between the fonts.
 
 - ### Color Scheme
+  - The color scheme for Snake Snack is made with two different color scheme. 
+  - The first is a more dark color scheme for the background and different element as well as a green for the game board. This was done to give a good contrast to the green board and the silver snake.
+  - The second is a light color scheme which is used for the silver colours. For the text on the pages to give a contrast from the darker background. As well as most element like the rules modal, controller buttons, restart and other buttons, and scoreboard have snake scales with silvery color in the background.
 
 ### __Wireframes__
 
