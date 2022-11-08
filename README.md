@@ -59,6 +59,11 @@ It is for every person that wants either a hit of nostalgia or just a fun easy g
     - On smaller screens the controls are moved under the game board and the game board fills out the width out the screen under the logo. The pause button stays to the bottom on the left side above the footer. 
     - When the game is over, a game over message comes to the pages with a responsive restart button instead of it showing the board.
 
+- ### Future Features
+  - A future feature could be to have high score board that saves all high scores of all players so visitors can try and beat each others scores and get to the top.
+  - Levels with opsticals of different bushes so the highest levels have a whole labyrient that the player have to go back and forth in to get the food.
+  - Different kinds of food to go after both healty and unhealty that takes points away.  
+
 ### __Typography and Color Scheme__
 
 - ### Typography
