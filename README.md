@@ -76,6 +76,10 @@ It is for every person that wants either a hit of nostalgia or just a fun easy g
   - The first is a more dark color scheme for the background and different element as well as a green for the game board. This was done to give a good contrast to the green board and the silver snake.
   - The second is a light color scheme which is used for the silver colours. For the text on the pages to give a contrast from the darker background. As well as most element like the rules modal, controller buttons, restart and other buttons, and scoreboard have snake scales with silvery color in the background.
 
+  ![Snake Snack dark color scheme, pallet made on https://coolors.co/](./readmeimages/darkcolorpallet.webp)
+
+  ![Snake Snack light color scheme, pallet made on https://coolors.co/](./readmeimages/lightcolorpallet.webp)
+
 ### __Wireframes__
 
 [The Home Page - Wireframe](./readmeimages/wireframes/homewireframes.png)
@@ -91,6 +95,13 @@ It is for every person that wants either a hit of nostalgia or just a fun easy g
 [The Game Page - Wireframe](./readmeimages/wireframes/gamewireframes.png)
 
 ### __Imagery__
+  - All imagery on this website has been created specially for this page and game.
+
+    ![Apple image](./readmeimages/apple.webp)
+    ![Snake Snack Logo image](./readmeimages/logo.webp)
+    ![Bush for the border of the game image](./readmeimages/bush.webp)
+    ![Scales image](./readmeimages/scales.webp)
+    ![hero-image](./readmeimages/heroimage.webp)
 
 ## __Testing__
 
