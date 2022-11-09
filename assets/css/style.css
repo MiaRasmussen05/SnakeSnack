@@ -105,3 +105,20 @@ nav {
     inset 1px 1px 1px #000,
     inset -1px -1px 1px #000;
 }
+
+/* THE START OF MIDDLE SECTION FROM HOME PAGE*/
+
+.middle {
+    display: inline-flex;
+}
+
+.hero-image {
+    width: 50%;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 76%;
+    display: block;
+    margin: 7.8% 5%;
+}
