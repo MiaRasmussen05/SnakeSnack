@@ -24,3 +24,19 @@
     0 3px 0px #5f5f5f,
     0 5px 1px #000;
 }
+
+.settings-wrapper {
+    width: 380px;
+    height: 350px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    display: none;
+    background-color: #000;
+    border: 2px solid #A9ACAD;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #000;
+    transform: translate(-50%, -50%);
+    margin: auto auto;
+    z-index: 4;
+}
