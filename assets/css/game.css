@@ -132,3 +132,17 @@ legend {
 #soundBtnOff {
     margin: 4.5px 0 0 2%;
 }
+
+#musicBtnOff, #musicBtnOn,  #soundBtnOff, #soundBtnOn {
+    box-shadow: 1px 1px 3px #111111,
+    -1px -1px 3px #7c7c7c,
+    -1px 1px 3px #111111,
+    1px -1px 3px #7c7c7c;
+}
+
+#musicBtnOff:hover, #musicBtnOn:hover, #soundBtnOff:hover, #soundBtnOn:hover {
+    box-shadow: inset 1px 1px 3px #111111,
+    inset -1px -1px 3px #7c7c7c,
+    inset -1px 1px 3px #111111,
+    inset 1px -1px 3px #7c7c7c;
+}
