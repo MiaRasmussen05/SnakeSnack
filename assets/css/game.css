@@ -327,3 +327,16 @@ legend {
 #downBtn:hover > i {
     color: #9FAAD9;
 }
+
+.point{
+    width: 60px;
+    height: 60px;
+    background-color: #2B2B2C;
+    background-image: url(../images/scales.webp);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    border-radius: 20px;
+    transform: rotate(45deg);
+    z-index: -1;
+}
