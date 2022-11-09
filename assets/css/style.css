@@ -38,3 +38,25 @@ header {
     position: relative;
     z-index: 2;
 }
+
+nav {
+    width: 100%;
+    position: relative;
+    display: flex;
+    margin-right: 2%;
+    padding-top: 1%;
+}
+
+.pages {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    line-height: 50px;
+    margin: 0 0 0 12%;
+}
+
+.social-links {
+    width: 70%;
+    text-align: end;
+}
