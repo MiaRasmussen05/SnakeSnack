@@ -192,3 +192,22 @@ nav {
     margin: 0 auto;
     margin-top: 2.3%;
 }
+
+.rules-container h2 {
+    font-size: 250%;
+}
+
+.rules-container h3 {
+    font-size: 150%;
+    font-weight: 500;
+    margin: 1% 0;
+}
+
+.rules-container h3 span {
+    font-weight: 600;
+}
+
+.rules-container h4 {
+    font-size: 140%;
+    padding: 2% 0;
+}
