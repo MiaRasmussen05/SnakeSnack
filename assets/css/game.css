@@ -119,3 +119,16 @@ legend {
     font-size: 130%;
     line-height: 50px;
 }
+
+#musicBtnOff {
+    margin: 4.5px 0 15% 2%;
+}
+
+#musicBtnOn, #soundBtnOn  {
+    display: none;
+    margin: 4.5px 0 15% 77.5%;
+}
+
+#soundBtnOff {
+    margin: 4.5px 0 0 2%;
+}
