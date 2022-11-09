@@ -162,3 +162,23 @@ legend {
 #soundBtnOn i{
     padding: 18% 0 0 15%;
 }
+
+/* THE START OF GAMEBOARD SECTION */
+
+.game-border {
+    width: 37.4%;
+    height: 78.8vmin;
+    position: absolute;
+    margin: -110px 0 0 17%;
+}
+
+.board {
+    width: 75vmin;
+    height: 75vmin;
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(26, 1fr);
+    grid-template-rows: repeat(26, 1fr);
+    background-color: #0d9b37;
+    border-radius: 10px;
+}
