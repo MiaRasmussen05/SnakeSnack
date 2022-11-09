@@ -422,3 +422,26 @@ form {
 .message, .collaboration {
     margin-left: 5%;
 }
+
+.form-end {
+    width: 69%;
+    display: block;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    min-width: 100%;
+    min-height: 200px;
+    max-width: 100%;
+    max-height: 200px;
+    background-color: #2B2B2C;
+    box-shadow: 0px 0px 10px #000;
+    color: #DFDEE0;
+    border: none;
+    padding: 2.5%;
+}
+
+#teArea {
+    margin: 2% 0 3% 0;
+}
