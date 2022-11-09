@@ -146,3 +146,19 @@ legend {
     inset -1px 1px 3px #111111,
     inset 1px -1px 3px #7c7c7c;
 }
+
+#musicBtnOff i, #soundBtnOff i{
+    padding: 18% 0 0 22.5%;
+}
+
+#musicBtnOff i:before {
+    padding: 18% 17px 0 0;
+}
+
+#musicBtnOn i {
+    padding: 17% 4% 0 0;
+}
+
+#soundBtnOn i{
+    padding: 18% 0 0 15%;
+}
