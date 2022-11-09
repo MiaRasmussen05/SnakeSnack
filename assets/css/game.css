@@ -253,3 +253,13 @@ legend {
     inset -2px -2px 4px #3B3B3B;
     margin: 0 0 0 45%;
 }
+
+.restart:hover {
+    box-shadow: inset 2px 2px 4px #3B3B3B,
+    inset -2px -2px 4px #F0F0F0;
+}
+
+.restart i:hover {
+    transition: all 0.5s;
+    transform: rotate(-360deg);
+}
