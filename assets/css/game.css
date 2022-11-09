@@ -31,7 +31,7 @@
     position: fixed;
     top: 50%;
     left: 50%;
-    display: none;
+    /* display: none; */
     background-color: #000;
     border: 2px solid #A9ACAD;
     border-radius: 10px;
@@ -81,4 +81,23 @@ legend {
     padding-right: 1%;
     margin-top: 5%;
     margin-left: 20%;
+}
+
+/* BUTTONS - MUSIC AND SOUND */
+
+.btnControls {
+    width: 70px;
+    height: 70px;
+    position: relative;
+    background-color: #2B2B2C;
+    background-image: url(../images/scales.webp);
+    background-position: center;
+    background-size: cover;
+    border: none;
+    border-radius: 20px;
+    font-size: 250%;
+    font-weight: 700;
+    text-align: center;
+    line-height: 70px;
+    cursor: pointer;
 }
