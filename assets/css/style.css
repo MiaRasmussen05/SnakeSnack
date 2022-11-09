@@ -290,14 +290,21 @@ nav {
     cursor: pointer;
 }
 
-#close-rules {
+#close-rules, #closeSettings {
     display:flex;
     justify-content:center;
     align-items:center;
     margin: 3.3% 24% 0 0;
 }
 
-#close-rules:hover {
+#closeSettings {
+    font-size: 150%;
+    text-decoration: none;
+    color: #3B3B3B;
+    margin: -5.5% 4% 0 0;
+}
+
+#close-rules:hover, #closeSettings:hover {
     font-size: 250%;
    color: #7F0F0F;
 }
