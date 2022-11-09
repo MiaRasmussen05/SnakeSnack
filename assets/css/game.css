@@ -198,3 +198,19 @@ legend {
     text-align: center;
     margin-bottom: 1%;
 }
+
+.score-board {
+    width: 77.8vmin;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to bottom right, #2B2B2C, #555557, #AAA9AD, #DFDEE0, #A9ACAD, #6F6F70, #F0F0F0, #707070, #2B2B2C);
+    background-image: url(../images/scales.webp);
+    background-position: center;
+    background-size: cover;
+    font-size: 120%;
+    font-weight: 700;
+    border: 3px solid #000;
+    border-style: double;
+    padding: 0.5%;
+}
