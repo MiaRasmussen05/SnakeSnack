@@ -43,6 +43,19 @@ body {
     font-size: 90%;
 }
 
+/* LANDING CARD */
+
+.landing-card {
+    width: 93%;
+    height: 88vh;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px #000;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 30px;
+}
+
 /* THE START OF HEADER */
 
 header {
