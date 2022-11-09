@@ -151,3 +151,14 @@ nav {
     cursor: pointer;
     margin: 0 10%;
 }
+
+.btn:hover {
+    box-shadow: inset 2px 2px 4px #3B3B3B,
+    inset -2px -2px 4px #F0F0F0;
+}
+
+#play-btn {
+    display: block;
+    text-decoration: none;
+    color: #000;
+}
