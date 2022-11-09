@@ -191,4 +191,10 @@ legend {
     border-image-width: 1 1 1 1;
     border-image-outset: 0.2;
     border-image-repeat: round;
- }
+}
+
+.score-wrapper {
+    width: 103.5%;
+    text-align: center;
+    margin-bottom: 1%;
+}
