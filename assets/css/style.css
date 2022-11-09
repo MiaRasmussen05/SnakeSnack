@@ -228,3 +228,24 @@ nav {
 .apple {
     width: 20%;
 }
+
+/* THE CLOSE BUTTONS FOR RULES AND SETTINGS */
+
+.close-btn {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-decoration: none;
+    font-size: 200%;
+    color: #000;
+    cursor: pointer;
+}
+
+#close-rules {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin: 3.3% 24% 0 0;
+}
