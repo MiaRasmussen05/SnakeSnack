@@ -101,19 +101,22 @@
             <div class="form-section">
                 <form class="form-container" action="https://formsubmit.co/snakesnackwebsite@gmail.com" method="POST">
 
-                    <div>
+                    <div class="input-wrapper">
                         <label for="fuName">Full Name</label>
-                        <input id="fuName" type="text" name="Full_name" placeholder="e.g. John Doe" required>
-                        <label for="email">Email</label>
-                        <input id="email" type="email" name="Email_address" placeholder="e.g. johndoe@gmail.com"
+                        <input id="fuName" type="text" name="Full_name" class="input" placeholder="e.g. John Doe"
                             required>
+                        <label for="email">Email</label>
+                        <input id="email" type="email" name="Email_address" class="input"
+                            placeholder="e.g. johndoe@gmail.com" required>
                     </div>
 
-                    <div>
-                        <label for="feedback"><input id="feedback" type="radio" name="radioBtn"> Feedback</label>
-                        <label for="Message"><input id="Message" type="radio" name="radioBtn"> Message</label>
-                        <label for="collaboration"><input id="collaboration" type="radio" name="radioBtn">
-                            Collaboration</label>
+                    <div class="radio-wrapper">
+                        <label for="feedback"><input id="feedback" type="radio" name="radioBtn" class="radio feedback"
+                            required> Feedback</label>
+                        <label for="Message"><input id="Message" type="radio" name="radioBtn" class="radio message">
+                            Message</label>
+                        <label for="collaboration"><input id="collaboration" type="radio" name="radioBtn"
+                            class="radio collaboration">Collaboration</label>
                     </div>
 
                     <div>
