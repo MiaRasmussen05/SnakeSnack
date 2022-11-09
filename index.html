@@ -24,7 +24,8 @@
         <header>
             <div>
                 <a href="index.html">
-                    <img src="./assets/images/logo.webp" alt="Snake Snack logo of black snake around apple button click to go to home page">
+                    <img src="./assets/images/logo.webp"
+                        alt="Snake Snack logo of black snake around apple button click to go to home page">
                 </a>
             </div>
 
@@ -43,15 +44,15 @@
                 <ul class="social-links">
                     <li>
                         <a href="https://www.facebook.com" target="_blank" rel="noopener"
-                        aria-label="(opens in a new tab)"><i class="fab fa-facebook"></i></a>
+                            aria-label="(opens in a new tab)"><i class="fab fa-facebook"></i></a>
                     </li>
                     <li>
                         <a href="https://github.com/MiaRasmussen05/SnakeSnack" target="_blank" rel="noopener"
-                        aria-label="(opens in a new tab)"><i class="fab fa-github"></i></a>
+                            aria-label="(opens in a new tab)"><i class="fab fa-github"></i></a>
                     </li>
                     <li>
                         <a href="https://twitter.com" target="_blank" rel="noopener"
-                        aria-label="(opens in a new tab)"><i class="fab fa-twitter"></i></a>
+                            aria-label="(opens in a new tab)"><i class="fab fa-twitter"></i></a>
                     </li>
                 </ul>
             </nav>
@@ -60,61 +61,65 @@
         </header>
 
         <main>
+            <div class="center-container">
 
-            <!-- THE START OF MIDDLE SECTION -->
-            <div class="middle">
-                <div class="hero-image">
-                    <img src="./assets/images/heroimage.webp" class="hero"
-                        alt="Silver snake jumping out towards the screen with snake snack in red behind it.">
-                </div>
-                <div class="buttons">
-                    <div class="btn" id="rules-btn">Rules</div>
-                        <div class="btn"> 
+                <!-- THE START OF MIDDLE SECTION -->
+                <div class="middle">
+                    <div class="hero-image">
+                        <img src="./assets/images/heroimage.webp" class="hero"
+                            alt="Silver snake jumping out towards the screen with snake snack in red behind it.">
+                    </div>
+                    <div class="buttons">
+                        <div class="btn" id="rules-btn">Rules</div>
+                        <div class="btn">
                             <a id="play-btn" href="#">Play</a>
                         </div>
-                </div>
-            </div>
-
-            <!-- THE START OF RULES MODAL SECTION -->
-            <section class="rules-modal">
-                
-                <div class="rules-container">
-                    <h2>RULES</h2>
-                    <h3> <span>Welcome to Snake Snack!</span>
-                        <br>
-                        Silvers the Snake thank you for coming, he is starting to become quite hungry. However, he
-                        isn't the best at finding his food. Will you help Silvers to get the food so he can grow and 
-                        not keep going hungry?
-                    </h3>
-                    <h4>I am sure you already know this, but lets just go over it one more time for the people in
-                        the back!
-                    </h4>
-                    <div>
-                        <p class="how">To control Silvers the Snake on the screen you have to push the arrow keys.
-                            Make sure you keep away from hitting the border or yourself it will make you go game
-                            over. Make him grow and earn points for as long as you can. Let's see how far you can
-                            go!</p>
-                        <div class="foods">
-                            <p class="healty">
-                                <span>Food</span>
-                                <br>
-                                Every time you eat one of the apples you grow both in length and in points. 
-                                <br>
-                                <img src="./assets/images/apple.webp" class="apple" alt="Red apple with a green leaf">
-                            </p>
-                        </div>
                     </div>
-                    <a href="#" class="close-btn" id="close-rules"><i class="fas fa-times"></i></a>
                 </div>
 
-            </section>
+                <!-- THE START OF RULES MODAL SECTION -->
+                <section class="rules-modal">
+
+                    <div class="rules-container">
+                        <h2>RULES</h2>
+                        <h3> <span>Welcome to Snake Snack!</span>
+                            <br>
+                            Silvers the Snake thank you for coming, he is starting to become quite hungry. However, he
+                            isn't the best at finding his food. Will you help Silvers to get the food so he can grow and
+                            not keep going hungry?
+                        </h3>
+                        <h4>I am sure you already know this, but lets just go over it one more time for the people in
+                            the back!
+                        </h4>
+                        <div>
+                            <p class="how">To control Silvers the Snake on the screen you have to push the arrow keys.
+                                Make sure you keep away from hitting the border or yourself it will make you go game
+                                over. Make him grow and earn points for as long as you can. Let's see how far you can
+                                go!</p>
+                            <div class="foods">
+                                <p class="healty">
+                                    <span>Food</span>
+                                    <br>
+                                    Every time you eat one of the apples you grow both in length and in points.
+                                    <br>
+                                    <img src="./assets/images/apple.webp" class="apple"
+                                        alt="Red apple with a green leaf">
+                                </p>
+                            </div>
+                        </div>
+                        <a href="#" class="close-btn" id="close-rules"><i class="fas fa-times"></i></a>
+                    </div>
+
+                </section>
+            </div>
         </main>
     </div>
 
     <!-- THE START OF FOOTER ON HOME PAGE -->
     <footer>
         <div class="footer-top">
-            <i class="fas fa-copyright" onclick="openRights()"></i><p class="copyright">Copyright ©Mia Rasmussen 2022</p>
+            <i class="fas fa-copyright" onclick="openRights()"></i>
+            <p class="copyright">Copyright ©Mia Rasmussen 2022</p>
         </div>
         <p class="disclaimer">Disclaimer: this Gamepage was built for a project and is not for commercial use</p>
     </footer>
@@ -126,7 +131,7 @@
     <script src="./assets/js/rules-modal.js"></script>
     <script src="./assets/js/welcome.js"></script>
     <script src="./assets/js/copyrights.js"></script>
-    
+
 </body>
 
 </html>

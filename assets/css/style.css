@@ -145,6 +145,14 @@ nav {
     inset -1px -1px 1px #000;
 }
 
+/* CENTER CONTAINER */
+
+.center-container {
+    height: 75.5vh;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
 /* THE START OF MIDDLE SECTION FROM HOME PAGE*/
 
 .middle {

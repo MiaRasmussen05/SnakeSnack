@@ -57,78 +57,81 @@
         </header>
 
         <main>
+            <div class="center-container">
 
-            <section>
-                <h1 class="heading">Contact Us</h1>
-                <div class="information">
-                    <div class="answer-back">
-                        <h2>Answer</h2>
-                        <i class="fas fa-comments"></i>
-                        <br>
-                        <h3>We can't wait to get in touch!</h3>
-                        <p>
+                <section>
+                    <h1 class="heading">Contact Us</h1>
+                    <div class="information">
+                        <div class="answer-back">
+                            <h2>Answer</h2>
+                            <i class="fas fa-comments"></i>
                             <br>
-                            So don't hesitet to send message and we will get back to you as quickly as possible!
-                        </p>
+                            <h3>We can't wait to get in touch!</h3>
+                            <p>
+                                <br>
+                                So don't hesitet to send message and we will get back to you as quickly as possible!
+                            </p>
+                        </div>
+                        <div class="email-box">
+                            <h2>Email</h2>
+                            <i class="fas fa-envelope"></i>
+                            <br>
+                            <span>SnakeSnack@gmail.com</span>
+                            <br>
+                            <br>
+                            <h3>Business Hours</h3>
+                            <table class="busiHours">
+                                <tr>
+                                    <td></td>
+                                    <td>Mon - Fri</td>
+                                    <td>:</td>
+                                    <td>8 am - 6 pm</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>Sat, sun</td>
+                                    <td>:</td>
+                                    <td>CLOSED</td>
+                                </tr>
+                            </table>
+                        </div>
                     </div>
-                    <div class="email-box">
-                        <h2>Email</h2>
-                        <i class="fas fa-envelope"></i>
-                        <br>
-                        <span>SnakeSnack@gmail.com</span>
-                        <br>
-                        <br>
-                        <h3>Business Hours</h3>
-                        <table class="busiHours">
-                            <tr>
-                                <td></td>
-                                <td>Mon - Fri</td>
-                                <td>:</td>
-                                <td>8 am - 6 pm</td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td>Sat, sun</td>
-                                <td>:</td>
-                                <td>CLOSED</td>
-                            </tr>
-                        </table>
-                    </div>
+                </section>
+
+                <!-- THE START OF THE FORM -->
+                <div class="form-section">
+                    <form class="form-container" action="https://formsubmit.co/snakesnackwebsite@gmail.com"
+                        method="POST">
+
+                        <div class="input-wrapper">
+                            <label for="fuName">Full Name</label>
+                            <input id="fuName" type="text" name="Full_name" class="input" placeholder="e.g. John Doe"
+                                required>
+                            <label for="email">Email</label>
+                            <input id="email" type="email" name="Email_address" class="input"
+                                placeholder="e.g. johndoe@gmail.com" required>
+                        </div>
+
+                        <div class="radio-wrapper">
+                            <label for="feedback"><input id="feedback" type="radio" name="radioBtn"
+                                    class="radio feedback" required> Feedback</label>
+                            <label for="Message"><input id="Message" type="radio" name="radioBtn" class="radio message">
+                                Message</label>
+                            <label for="collaboration"><input id="collaboration" type="radio" name="radioBtn"
+                                    class="radio collaboration">Collaboration</label>
+                        </div>
+
+                        <div class="form-end">
+                            <label for="teArea">Message</label>
+                            <textarea id="teArea" name="textArea" placeholder="Write your message here..."
+                                maxlength="550" required></textarea>
+                            <input type="submit" value="Send" class="contactBtn">
+                        </div>
+
+                    </form>
+
                 </div>
-            </section>
-
-            <!-- THE START OF THE FORM -->
-            <div class="form-section">
-                <form class="form-container" action="https://formsubmit.co/snakesnackwebsite@gmail.com" method="POST">
-
-                    <div class="input-wrapper">
-                        <label for="fuName">Full Name</label>
-                        <input id="fuName" type="text" name="Full_name" class="input" placeholder="e.g. John Doe"
-                            required>
-                        <label for="email">Email</label>
-                        <input id="email" type="email" name="Email_address" class="input"
-                            placeholder="e.g. johndoe@gmail.com" required>
-                    </div>
-
-                    <div class="radio-wrapper">
-                        <label for="feedback"><input id="feedback" type="radio" name="radioBtn" class="radio feedback"
-                                required> Feedback</label>
-                        <label for="Message"><input id="Message" type="radio" name="radioBtn" class="radio message">
-                            Message</label>
-                        <label for="collaboration"><input id="collaboration" type="radio" name="radioBtn"
-                                class="radio collaboration">Collaboration</label>
-                    </div>
-
-                    <div class="form-end">
-                        <label for="teArea">Message</label>
-                        <textarea id="teArea" name="textArea" placeholder="Write your message here..." maxlength="550"
-                            required></textarea>
-                        <input type="submit" value="Send" class="contactBtn">
-                    </div>
-
-                </form>
             </div>
-
         </main>
 
     </div>
