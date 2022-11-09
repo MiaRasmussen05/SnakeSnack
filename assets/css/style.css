@@ -358,3 +358,23 @@ footer {
     padding: 1.5%;
     margin: 3% 0 0 20%;
 }
+
+.answer-back h2, .email-box h2 {
+    writing-mode: vertical-lr;
+}
+
+.answer-back i, .email-box i {
+    position: absolute;
+    font-size: 350%;
+    margin: -60px 0 0 -25px;
+}
+
+.email-box i {
+    margin-top: -50px;
+}
+
+.busiHours {
+        border-spacing: 15px; 
+        margin-left: auto;
+        margin-right: auto;
+}
