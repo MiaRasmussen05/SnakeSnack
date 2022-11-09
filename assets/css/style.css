@@ -122,3 +122,32 @@ nav {
     display: block;
     margin: 7.8% 5%;
 }
+
+.buttons {
+    width: 50%;
+    display: inline-flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.btn {
+    width: 225px;
+    height: 80px;
+    align-self: center;
+    background-image: linear-gradient(to bottom right, #A9ACAD, #A9ACAD, #A9ACAD, #A9ACAD, #6F6F70, #A9ACAD);
+    background-image: url(../images/scales.webp);
+    background-position: center;
+    background-size: cover;
+    border: none;
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 4px #F0F0F0,
+    inset -2px -2px 4px #3B3B3B;
+    font-weight: 700;
+    font-size: 240%;
+    color: #000;
+    text-shadow: 1px 1px 3px #3B3B3B;
+    text-align: center;
+    line-height: 70px;
+    cursor: pointer;
+    margin: 0 10%;
+}
