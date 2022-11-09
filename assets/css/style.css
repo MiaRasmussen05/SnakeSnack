@@ -317,3 +317,24 @@ footer {
 .disclaimer {
     text-transform: uppercase;
 }
+
+/* THE START OF ABOUT PARAGRAFS SECTION FROM ABOUT PAGE */
+
+.heading {
+    font-family: 'Cormorant', sans-serif;
+    font-size: 400%;
+    color: #DFDEE0;
+    text-align: center;
+}
+
+.paragrafs {
+    display: flex;
+    padding: 3%;
+}
+
+.paragrafs p {
+    width: 50%;
+    font-size: 120%;
+    color: #DFDEE0;
+    padding: 1%;
+}
