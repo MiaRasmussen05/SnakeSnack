@@ -271,3 +271,27 @@ legend {
     right: 0;
     margin: 10% 11% 0 0;
 }
+
+#upBtn {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    margin-bottom: 20px;
+}
+
+#leftBtn {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    margin-right: 20px;
+}
+
+#rightBtn {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    margin-left: 20px;
+}
+
+#downBtn {
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    margin-top: 20px;
+}
