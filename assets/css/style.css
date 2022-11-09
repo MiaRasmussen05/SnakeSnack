@@ -445,3 +445,18 @@ textarea {
 #teArea {
     margin: 2% 0 3% 0;
 }
+
+.contactBtn {
+    width: 30%;
+    height: 50px;
+    text-align: center;
+    font-size: 100%;
+    background-image: linear-gradient(to top left, #2B2B2C, #555557, #AAA9AD, #DFDEE0, #A9ACAD, #6F6F70, #F0F0F0, #707070, #2B2B2C);
+    background-image: url(../images/scales.webp);
+    background-position: center;
+    background-size: cover;
+    border-radius: 40px;
+    cursor: pointer;
+    margin: 0 40%;
+    margin-bottom: 15%;
+}
