@@ -214,3 +214,13 @@ legend {
     border-style: double;
     padding: 0.5%;
 }
+
+.score-board p {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.score-board span {
+    padding: 0 0 0 10%;
+}
