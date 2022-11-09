@@ -62,3 +62,23 @@ legend {
     0 7px 1px #000;
     padding: 2%;
 }
+
+.settingBtns {
+    width: 100%;
+    text-shadow: 3px 3px 2px #4d4d4d;
+}
+
+.settingBtnborder {
+    width: 60%;
+    height: 60px;
+    display: inline-flex;
+    background-color: #1e1e1f;
+    box-shadow: 2px 1px 2px #DFDEE0,
+    -2px -1px 2px #1d1d1d,
+    inset -5px -5px 10px #000000,
+    inset 3px 3px 10px #DFDEE0;
+    border-radius: 30px;
+    padding-right: 1%;
+    margin-top: 5%;
+    margin-left: 20%;
+}
