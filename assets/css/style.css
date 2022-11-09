@@ -56,7 +56,52 @@ nav {
     margin: 0 0 0 12%;
 }
 
+.pages li, .social-links li {
+    position: relative;
+    display: inline-flex;
+    list-style: none;
+    margin: 0 3%;
+}
+
+.pages li a {
+    text-decoration: none;
+    font-size: 120%;
+    color: #DFDEE0;
+    margin: 0 40px;
+}
+
+.pages li a:hover {
+    color: #000;
+}
+
 .social-links {
     width: 70%;
     text-align: end;
+}
+
+.social-links li i {
+    width: 42px;
+    height: 38px;
+    text-align: center;
+    position: relative;
+    font-size: 131%;
+    color: #DFDEE0;
+    text-shadow: 0 0 4px #000;
+    border: 3px solid #DFDEE0;
+    border-radius: 50%;
+    box-shadow: 1px 1px 1px #000,
+    -1px -1px 1px #a7a7a7,
+    inset 1px 1px 1px #000,
+    inset -1px -1px 1px #a7a7a7;
+    padding: 14% 0 0 0;
+}
+
+.social-links li i:hover {
+    color: #2D2D2D;
+    text-shadow: 0 0 4px #7F0F0F;
+    border: 3px solid #2D2D2D;
+    box-shadow: 0px 0px 2px #000,
+    0px 0px 2px #000,
+    inset 1px 1px 1px #000,
+    inset -1px -1px 1px #000;
 }
