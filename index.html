@@ -59,10 +59,10 @@
             </nav>
 
             <!-- THE START OF SETTINGS MENU -->
-            <div class="settingsBtn">
+            <div class="settingsBtn" onclick="openSettings()">
                 <i class="fas fa-cog"></i>
             </div>
-            <fieldset class="settings-wrapper">
+            <fieldset class="settings-wrapper" id="settings">
                 <legend><i class="fas fa-cog"></i></legend>
                 <div class="settingBtns">
                     <div class="settingBtnborder">
@@ -82,7 +82,7 @@
                         </button>
                     </div>
                 </div>
-                <a href="#" class="close-btn" id="closeSettings"><i
+                <a href="#" class="close-btn" onclick="closeSettings()" id="closeSettings"><i
                     class="fas fa-times"></i></a>
             </fieldset>
         </header>
@@ -155,8 +155,9 @@
     <script src="https://kit.fontawesome.com/bc2311dd0c.js" crossorigin="anonymous"></script>
 
     <!-- script links-->
-    <script src="./assets/js/rules-modal.js"></script>
     <script src="./assets/js/welcome.js"></script>
+    <script src="./assets/js/menu.js"></script>
+    <script src="./assets/js/rules-modal.js"></script>
     <script src="./assets/js/copyrights.js"></script>
 
 </body>
