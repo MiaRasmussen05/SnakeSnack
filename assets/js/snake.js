@@ -17,7 +17,6 @@ function drawSnake(board) {
         theSnakeElement.style.gridColumnStart = segments.x;
         theSnakeElement.style.gridRowStart = segments.y;
     });
-    console.log("drawSnake");
 }
 
 /**
@@ -36,8 +35,6 @@ function updateSnake() {
 
     BODY[0].y += direction.y;
     BODY[0].x += direction.x;
-
-    console.log("updateSnake");
 }
 
 /**

@@ -5,7 +5,6 @@ let board = document.getElementsByClassName('board')[0];
 window.addEventListener('DOMContentLoaded', (event) => {
     window.requestAnimationFrame(animation);
     gameOverMessage.style.display = "none";
-    console.log("window");
 });
 
 /**
@@ -24,8 +23,6 @@ function animation(time) {
     const secondsSincePreviousRender = (time - renderTime) / 150;
     if (secondsSincePreviousRender < 1 / SPEED) return;
     renderTime = time;
-
-    console.log("last render");
 
     draw();
     update();

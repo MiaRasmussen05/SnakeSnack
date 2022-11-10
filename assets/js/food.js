@@ -16,8 +16,6 @@ function drawFood(board) {
     board.appendChild(theFoodElement);
     theFoodElement.style.gridColumnStart = food.x;
     theFoodElement.style.gridRowStart = food.y;
-
-    console.log("drawFood");
 }
 
 /**
@@ -29,8 +27,6 @@ function updateFood() {
         score++;
         food = getARandomFoodPosition();
     }
-
-    console.log("updateFood");
 }
 
 /**
