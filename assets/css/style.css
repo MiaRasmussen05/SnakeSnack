@@ -1016,3 +1016,17 @@ textarea {
         margin: 1% 40% 5% 40%;
     }
 }
+
+@media screen and (max-width: 548px) {
+
+    body {
+        max-height: 100vh;
+    }
+
+    /* START WELCOME MESSAGE */
+
+    #welcome {
+        font-size: 160%;
+        margin-top:  50%;
+    }
+}
