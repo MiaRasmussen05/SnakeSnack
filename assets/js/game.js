@@ -30,6 +30,7 @@ function animation(time) {
 function draw() {
     board.innerHTML = ""
     drawSnake(board);
+    drawFood(board);
 };
 
 /**
@@ -37,4 +38,5 @@ function draw() {
  */
 function update() {
     updateSnake();
+    updateFood();
 };

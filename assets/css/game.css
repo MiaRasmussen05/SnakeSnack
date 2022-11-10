@@ -232,6 +232,17 @@ legend {
     border: 1.5px solid #000;
 }
 
+/* FOOD */
+
+.food {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/apple.webp);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 /* START OF GAME OVER AND RESTART */
 
 .game-over {
