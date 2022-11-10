@@ -14,42 +14,42 @@ function drawSnake(board) {
         let theSnakeElement = document.createElement('div');
         theSnakeElement.classList.add('snake');
         board.appendChild(theSnakeElement);
-        theSnakeElement.style.gridColumnStart = segments.x
-        theSnakeElement.style.gridRowStart = segments.y
+        theSnakeElement.style.gridColumnStart = segments.x;
+        theSnakeElement.style.gridRowStart = segments.y;
     });
     console.log("drawSnake");
-};
+}
 
 /**
  * Updates the snakes position to move it in a direction
  */
 function updateSnake() {
     
-    addMoreSegments()
-    let direction = getDirection()
+    addMoreSegments();
+    let direction = getDirection();
     // Updates each segment but the last one in the body to make them move while removing the last one
     for (let i = BODY.length - 2; i >= 0; i--) {
         BODY[i + 1] = {
             ...BODY[i]
         };
-    };
+    }
 
     BODY[0].y += direction.y;
     BODY[0].x += direction.x;
 
     console.log("updateSnake");
-};
+}
 
 /**
  * Get the amounts the segments will increase
  * and sound will play every time the snake increase
  */
 function expand(amounts) {
-    newSegments += amounts
+    newSegments += amounts;
     healtyFoodEffect.playbackRate = 1;
     healtyFoodEffect.play();
     healtyFoodEffect.currentTime = 0;
-};
+}
 
 /**
  * Takes the position of the snake and checks it with the position of the food
@@ -58,17 +58,17 @@ function onTheSnake(position, {
     ignoreSnakeHead = false 
     } = {}) {
     return BODY.some((segments, index) => {
-        if (ignoreSnakeHead && index === 0) return false
-        return equalPositions(segments, position)
+        if (ignoreSnakeHead && index === 0) return false;
+        return equalPositions(segments, position);
     });
-};
+}
 
 /**
  * Function to find the position of the head 
  */
 function getTheSnakeHead() {
     return BODY[0];
-};
+}
 
 /**
  * Functions checks if the head of the snake hits the body 
@@ -77,14 +77,14 @@ function snakeIntersection() {
     return onTheSnake(BODY[0], {
         ignoreSnakeHead: true
     });
-};
+}
 
 /**
  * Function to check if snake and food match up
  */
 function equalPositions(num1, num2) {
     return num1.x === num2.x && num1.y === num2.y;  
-};
+}
 
 /**
  * Takes and add new segments to the snake
@@ -95,7 +95,7 @@ function addMoreSegments() {
         BODY.push({
             ...BODY[BODY.length - 1]
         });
-    };
+    }
 
-    newSegments = 0
-};
+    newSegments = 0;
+}

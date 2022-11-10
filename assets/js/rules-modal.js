@@ -12,7 +12,7 @@ let closeRulesBtn = document.querySelector("#close-rules");
 
         rulesModal.style.display = "none";
 
-    };
+    }
 };
 
 /**
@@ -20,11 +20,11 @@ let closeRulesBtn = document.querySelector("#close-rules");
  */
  function openRules() {
     rulesModal.style.display = "block";
-};
+}
 
 function closeRules() {
     rulesModal.style.display = "none";
-};
+}
 
 rulesBtn.addEventListener("click", openRules);
 closeRulesBtn.addEventListener("click", closeRules);

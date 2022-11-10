@@ -5,21 +5,21 @@ let welcomeMessage = document.getElementById('welcome');
 //  Functions to show and hide welcome message
 function startWelcome() {
     welcomeMessage.style.display = "block";
-};
+}
 
 function welcomeLeave() {
     welcomeMessage.style.display = "none";
-};
+}
 
 // Functions will add a second message after the welcome message
 function startMessage() {
     welcomeMessage.style.display = "block";
-    welcomeMessage.textContent = "Let's get started!"
-};
+    welcomeMessage.textContent = "Let's get started!";
+}
 
 function startLeave() {
     welcomeMessage.style.display = "none";
-};
+}
 
 /**
  * If else statment that target the local storage to only show the welcome message the very 
@@ -35,4 +35,4 @@ function startLeave() {
 } else {
     welcomeLeave();
     startLeave();
-};
+}

@@ -4,7 +4,7 @@ let board = document.getElementsByClassName('board')[0];
 
 window.addEventListener('DOMContentLoaded', (event) => {
     window.requestAnimationFrame(animation);
-    gameOverMessage.style.display = "none"
+    gameOverMessage.style.display = "none";
     console.log("window");
 });
 
@@ -13,44 +13,44 @@ window.addEventListener('DOMContentLoaded', (event) => {
  */
 function animation(time) { 
     if (gameOver) {
-        board.style.display = 'none'
-        gameOverMessage.style.display = 'block'
+        board.style.display = 'none';
+        gameOverMessage.style.display = 'block';
         updateNewHighScore();
         gameOverSound.play();
         gameOverSound.loop() = false;
-    };
+    }
     // Calling the request anitmation frame to make animation work
     window.requestAnimationFrame(animation);
     const secondsSincePreviousRender = (time - renderTime) / 150;
-    if (secondsSincePreviousRender < 1 / SPEED) return
-    renderTime = time
+    if (secondsSincePreviousRender < 1 / SPEED) return;
+    renderTime = time;
 
     console.log("last render");
 
     draw();
     update();
-};
+}
 
 /**
  * Draws only what is needed based on the new updated version
  */
 function draw() {
-    board.innerHTML = ""
+    board.innerHTML = "";
     drawSnake(board);
     drawFood(board);
-};
+}
 
 /**
  * Updates the segements to fit new position or version
  */
 function update() {
-    getScore.innerHTML = score
-    getHighscore.innerHTML = highScore
+    getScore.innerHTML = score;
+    getHighscore.innerHTML = highScore;
     updateSnake();
     updateFood();
     checkTheDeath();
-};
+}
 
 function checkTheDeath() {
-    gameOver = outsideGrid(getTheSnakeHead()) || snakeIntersection()
-};
+    gameOver = outsideGrid(getTheSnakeHead()) || snakeIntersection();
+}

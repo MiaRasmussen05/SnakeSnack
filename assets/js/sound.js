@@ -27,13 +27,13 @@ for (var i = 0; i < musicBtnPlay.length; i++) {
         music.pause();
         musicOff.style.display = 'block';
         musicOn.style.display = 'none';
-      };
+      }
     });
-  };
+  }
 
   // Enable sounds when page is done loading 
   window.addEventListener('DOMContentLoaded', (event) => { 
-    startMute()
+    startMute();
   });
   
   // For loopthat makes it possible for both buttons to be clicked
@@ -47,9 +47,9 @@ for (var i = 0; i < musicBtnPlay.length; i++) {
         endMute();
         soundOff.style.display = 'none';
         soundOn.style.display = 'block';
-      };
+      }
     });
-  };
+  }
   
   /**
    * Function to create mute effect for sound button
@@ -65,3 +65,4 @@ for (var i = 0; i < musicBtnPlay.length; i++) {
     healtyFoodEffect.volume = 0.1;
     gameOverSound.volume = 0.1;
   }
+  

@@ -12,34 +12,34 @@ const getScore = document.getElementsByClassName('score')[0];
  */
 function drawFood(board) {
     let theFoodElement = document.createElement('div');
-    theFoodElement.classList.add('food')
-    board.appendChild(theFoodElement)
-    theFoodElement.style.gridColumnStart = food.x
-    theFoodElement.style.gridRowStart = food.y
+    theFoodElement.classList.add('food');
+    board.appendChild(theFoodElement);
+    theFoodElement.style.gridColumnStart = food.x;
+    theFoodElement.style.gridRowStart = food.y;
 
     console.log("drawFood");
-};
+}
 
 /**
  * Update new food position and get score from expansion of the snake
  */
 function updateFood() {
     if (onTheSnake(food)) {
-        expand(EXPANSION)
-        score++
-        food = getARandomFoodPosition()
-    };
+        expand(EXPANSION);
+        score++;
+        food = getARandomFoodPosition();
+    }
 
     console.log("updateFood");
-};
+}
 
 /**
  * Gives a random position for the food on the board that dosn't have the snake on it
  */
 function getARandomFoodPosition() {
-    let theNewFoodPosition
+    let theNewFoodPosition;
     if (theNewFoodPosition == null || onTheSnake(theNewFoodPosition)) {
-        theNewFoodPosition = aRandomGridPosition()
+        theNewFoodPosition = aRandomGridPosition();
     }
-    return theNewFoodPosition
-};
+    return theNewFoodPosition;
+}

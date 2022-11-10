@@ -7,4 +7,4 @@ let restartBtn = document.querySelector('.restart');
  */
 function restart(){
     window.location = './game.html';
-};
+}
