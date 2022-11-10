@@ -25,7 +25,7 @@ function drawFood(board) {
  */
 function updateFood() {
     if (onTheSnake(food)) {
-        expandSnake(EXPANSION)
+        expand(EXPANSION)
         score++
         food = getARandomFoodPosition()
     };
