@@ -965,4 +965,54 @@ textarea {
         font-size: 100%;
         padding: 4% 1%;
     }
+
+    /* START OF CONTACT PAGE */
+
+    .information {
+        margin-left: 1%;
+    }
+
+    .answer-back, .email-box {
+        font-size: 90%;
+        margin: 0 0 0 5%;
+    }
+
+    .form-section {
+        margin-top: 6%;
+    }
+    
+    .form-container {
+        width: 93%;
+        margin: 0 0 0 6%;
+    }
+    
+    form {
+        font-size: 110%;
+    }
+    
+    .input-wrapper {
+        width: 90%;
+        margin-top: 2%;
+    }
+    
+    .radio-wrapper {
+        width: 93%;
+    }
+    
+    .form-end {
+        width: 90%;
+    }
+    
+    textarea {
+        height: 170px;
+        min-height: 170px;
+        max-height: 170px;
+    }
+    
+    .contactBtn {
+        width: 25%;
+        height: 40px;
+        font-size: 120%;
+        margin: 1% 40% 5% 40%;
+    }
 }
