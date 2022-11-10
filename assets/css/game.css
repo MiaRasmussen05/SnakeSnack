@@ -623,3 +623,52 @@ legend {
         margin: 15% 6% 0 0;
     }
 }
+
+@media screen and (max-width: 748px) {
+
+    /* START OF SETTINGS */
+
+    .settingsBtn {
+        width: 38px;
+        height: 37px;
+        position: absolute;
+        right: 0;
+        line-height: 38px;
+        font-size: 90%;
+        margin: 42px 0 0 0;
+    }
+
+    /* START OF GAMEBOARD */
+
+    .game-border {
+        width: 50%;
+        height: 97.5vmin;
+        margin: 0 16%;
+        margin-top: -80px;
+    }
+    
+    .board {
+        width: 64vmin;
+        height: 64vmin;
+        border-radius: 10px;
+        margin: 0 auto;
+    }
+
+    .score-board {
+        width: 66.7vmin;
+    }
+
+    .game-over {
+        font-size: 220%;
+        transform: translate(-30%, -100%);
+    }
+
+    .restart {
+        width: 50px;
+        height: 50px;
+        font-size: 80%;
+        line-height: 50px;
+        margin-top: 0%;
+        margin-left: 40%;
+    }
+}
