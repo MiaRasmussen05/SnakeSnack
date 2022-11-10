@@ -446,3 +446,54 @@ legend {
         margin: 10% 10% 0 0;
     }
 }
+
+/* For larger screen sizes from 1280px wide and down */
+
+@media screen and (max-width: 1280px) {
+
+    /* START OF SETTINGS */
+
+    .settingsBtn {
+        margin-top: 14px;
+    }
+
+    /* START OF GAMEBOARD */
+
+    .game-border {
+        width: 37.4%;
+        height: 78.8vmin;
+        position: fixed;
+        margin: -5.5% 0 0 8%;
+    }
+
+    .board {
+        width: 66vmin;
+        height: 66vmin;
+    }
+
+    .score-wrapper {
+        width: 100%;
+    }
+
+    .score-board {
+        width: 69vmin;
+        padding: 0.5%;
+    }
+
+    .controls {
+        margin: 12% 6% 0 0;
+    }
+
+    .game-over {
+        font-size: 300%;
+        transform: translate(-40%, -50%);
+    }
+
+    .restart {
+        width: 70px;
+        height: 70px;
+        font-size: 85%;
+        line-height: 70px;
+        margin-left: 45%;
+    }
+}
