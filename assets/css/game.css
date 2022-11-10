@@ -225,6 +225,13 @@ legend {
     padding: 0 0 0 10%;
 }
 
+/* SNAKE */
+
+.snake {
+    background-image: linear-gradient(to bottom right, #2B2B2C, #555557, #AAA9AD, #DFDEE0, #A9ACAD, #6F6F70, #F0F0F0, #707070, #2B2B2C);
+    border: 1.5px solid #000;
+}
+
 /* START OF GAME OVER AND RESTART */
 
 .game-over {

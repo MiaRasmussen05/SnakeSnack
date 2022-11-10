@@ -29,7 +29,7 @@ function animation(time) {
  */
 function draw() {
     board.innerHTML = ""
-    drawSnake();
+    drawSnake(board);
 };
 
 /**
