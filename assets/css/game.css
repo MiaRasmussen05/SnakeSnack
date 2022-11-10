@@ -671,4 +671,78 @@ legend {
         margin-top: 0%;
         margin-left: 40%;
     }
+
+    /* START OF CONTROLS */
+
+    .controls {
+        right: 0;
+        margin: 61.2% 25% 0 0;
+    }
+    
+    .btnControls {
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+        font-size: 160%;
+        font-weight: 700;
+        line-height: 45px;
+    }
+
+    #upBtn {
+        height: 38px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        margin-bottom: 4px;
+    }
+    
+    #leftBtn {
+        width: 38px;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        margin-right: 4px;
+    }
+    
+    #rightBtn {
+        width: 38px;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        margin-left: 4px;
+    }
+    
+    #downBtn {
+        height: 38px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        margin-top: 2px;
+    }
+    
+    .point{
+        width: 46px;
+        height: 46px;
+        border-radius: 20px;
+    }
+    
+    .point-top {
+        border-bottom-right-radius: 10px;
+        margin-top: -39px;
+        margin-left: 2px;
+    }
+    
+    .point-left {
+        border-top-right-radius: 10px;
+        margin-top: 2px;
+        margin-left: 4px;
+    }
+    
+    .point-right {
+        border-bottom-left-radius: 10px;
+        margin-top: 2px;
+        margin-left: -6px;
+    }
+    
+    .point-down {
+        border-top-left-radius: 10px;
+        margin-top: -48px;
+        margin-left: 2px;
+    }
 }
