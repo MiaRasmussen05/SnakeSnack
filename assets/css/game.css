@@ -765,4 +765,46 @@ legend {
         width: 250px;
         height: 300px;
     }
+
+    /* START OF GAMEBOARD */
+    
+    .game-border {
+        width: 90%;
+        height: 97.5vmin;
+        border-radius: 10px;
+        margin: 0 10%;
+        margin-top: -7px;
+    }
+    
+    .board {
+        width: 75vmin;
+        height: 75vmin;
+        border-radius: 10px;
+        margin: 0 auto;
+        margin-top: 0%;
+    }
+
+    .score-board {
+        width: 77.3vmin;
+        font-size: 100%;
+    }
+
+    .score-board p {
+        width: 47%;
+        justify-content: start;
+        margin-left: 3%;
+    }
+
+    .game-over {
+        font-size: 200%;
+        transform: translate(-55%, -70%);
+    }
+    
+    .restart {
+        width: 50px;
+        height: 50px;
+        font-size: 90%;
+        margin-top: 0%;
+        margin-left: 40%;
+    }
 }
