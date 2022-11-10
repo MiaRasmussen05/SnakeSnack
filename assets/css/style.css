@@ -492,3 +492,40 @@ textarea {
     margin: 0 40%;
     margin-bottom: 15%;
 }
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1400px) {
+
+    /* START OF WELCOME MESSAGE */
+
+    #welcome {
+        font-size: 650%;
+    }
+
+    /* START OF HEADER */
+
+    .pages {
+        margin: 0 0 0 7%;
+    }
+    
+    .pages li a {
+        font-size: 110%;
+    }
+
+    /* START OF CONTACT PAGE */
+
+    .input-wrapper {
+        width: 76%;
+        margin-top: 2%;
+    }
+    
+    .radio-wrapper {
+        width: 78%;
+    }
+    
+    .form-end {
+        width: 75%;
+    }
+    
+}
