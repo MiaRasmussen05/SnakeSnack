@@ -1029,4 +1029,79 @@ textarea {
         font-size: 160%;
         margin-top:  50%;
     }
+
+    /* START OF HOME PAGE */
+
+    .logo {
+        width: 60%;
+    }
+    
+    .logo img {
+        width: 50px;
+        height: 60px;
+    }
+    
+    .middle {
+        display: block;
+    }
+    
+    .hero-image {
+        width: 100%;
+    }
+    
+    .hero-image img {
+        height: 160px;
+        margin: 9% 0.5% 5% 0.5%;
+    }
+    
+    .buttons {
+        width: 100%;
+        display: block;
+        margin-left: -4%;
+    }
+    
+    .btn {
+        width: 70%;
+        margin: 5% 20%;
+    }
+    
+    .rules-container {
+        width: 80%;
+        padding: 2% 4%;
+        margin-top: 13.5%;
+    }
+    
+    .rules-container h2 {
+        font-size: 250%;
+    }
+
+    .rules-container h3 span {
+        font-size: 140%;
+    }
+    
+    .rules-container h3 {
+        font-size: 100%;
+    }
+    
+    .rules-container h4 {
+        font-size: 120%;
+        padding: 3% 0;
+    }
+    
+    .rules-container p {
+        font-size: 100%;
+    }
+    
+    .foods {
+        margin-top: 5%;
+    }
+    
+    .apple {
+        width: 25%;
+        padding: 2.5% 0;
+    }
+    
+    #close-rules {
+        margin: 17% 11% 0 0;
+    }
 }
