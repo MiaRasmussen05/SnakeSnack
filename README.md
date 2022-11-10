@@ -189,4 +189,40 @@ It is for every person that wants either a hit of nostalgia or just a fun easy g
 
 ## __Deployment__
 
+- __via gitpod__
+    - Log into GitHub.
+    - Make a repository
+    - Click the green button close to the top of the page that says Gitpod.
+    - After letting Gitpod load an alert pops up on the top of the screen, click cancel.
+    - Then click the button that says More Actions.
+    - Hereafter click Open in Browser.
+    - Now right click with your mouse over the big box on the left that has your repository name over it.
+    - Click new file.
+    - Then make an index.html file. 
+    - Go to the top of the index file and click ! and enter. This will make a start template.
+    - Make a basic structure for your index page.
+    - Click on terminal at the bottom of the page.
+    - write 'git add .'
+    - Then for your first commit write 'git commit -m "Initial commit".
+    - Hereafter write 'git push'.
+    - Your code have now been pushed back and saved on your GitHub repository.
+
+  - __via GitHub pages__
+    - Log into GitHub.
+    - Go to the repositories.
+    - Then take this project LunationDesign.
+    - Go to the settings link.
+    - Then click on the pages link that is found on the navigations bar on the left side.
+    - Check the source section on the page, and choose main instead of none.
+    - Then click Save. After a few minutes you can see your live GitHub pages site is now deployed and the URL shown at the top of the page.
+
 ## __Credits__
+
+### Honourable mentions
+- Tutor Assistance Sean.
+- Tutor Assistance Gemma.
+- Tutor Assistance Oisin.
+
+
+### Content 
+- All images, social media profiles, logo, and text have been made and written by me.
