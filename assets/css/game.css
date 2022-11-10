@@ -348,6 +348,11 @@ legend {
     margin-left: 5px;
 }
 
+#upBtn:hover + .point-top {
+    box-shadow: none;
+    box-shadow: inset -2px -2px 12px #111111;
+}
+
 .point-left {
     border-top-right-radius: 10px;
     box-shadow: 2px -2px 1px #111111;
@@ -355,11 +360,21 @@ legend {
     margin-left: 22px;
 }
 
+#leftBtn:hover + .point-left {
+    box-shadow: none;
+    box-shadow: inset -2px 2px 12px #111111;
+}
+
 .point-right {
     border-bottom-left-radius: 10px;
     box-shadow: -2px 2px 1px #111111;
     margin-top: 5px;
     margin-left: 8px;
+}
+
+#rightBtn:hover + .point-right {
+    box-shadow: none;
+    box-shadow: inset 2px -2px 12px #111111;
 }
 
 .left, .right {
@@ -371,4 +386,9 @@ legend {
     box-shadow: -2px -2px 1px #111111;
     margin-top: -82px;
     margin-left: 5px;
+}
+
+#downBtn:hover ~ .point-down {
+    box-shadow: none;
+    box-shadow: inset 2px 2px 12px #111111;
 }
