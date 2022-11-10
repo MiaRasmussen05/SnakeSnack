@@ -42,9 +42,13 @@ function updateSnake() {
 
 /**
  * Get the amounts the segments will increase
+ * and sound will play every time the snake increase
  */
 function expand(amounts) {
     newSegments += amounts
+    healtyFoodEffect.playbackRate = 1;
+    healtyFoodEffect.play();
+    healtyFoodEffect.currentTime = 0;
 };
 
 /**

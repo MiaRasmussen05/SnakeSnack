@@ -16,6 +16,8 @@ function animation(time) {
         board.style.display = 'none'
         gameOverMessage.style.display = 'block'
         updateNewHighScore();
+        gameOverSound.play();
+        gameOverSound.loop() = false;
     };
     // Calling the request anitmation frame to make animation work
     window.requestAnimationFrame(animation);
