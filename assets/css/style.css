@@ -927,4 +927,21 @@ textarea {
         font-size: 100%;
         margin: 3% 4% 0 0;
     }
+
+        /* START OF HOME PAGE */
+
+        .landing-card {
+            width: 96%;
+            box-shadow: none;
+        }
+    
+        /* START OF FOOTER */
+    
+        .copyright, .disclaimer {
+            font-size: 60%;
+        }
+    
+        .disclaimer {
+            font-size: 50%;
+        }
 }
