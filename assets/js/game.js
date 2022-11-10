@@ -37,6 +37,7 @@ function draw() {
  * Updates the segements to fit new position or version
  */
 function update() {
+    getScore.innerHTML = score
     updateSnake();
     updateFood();
 };
