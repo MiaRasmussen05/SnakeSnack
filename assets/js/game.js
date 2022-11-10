@@ -4,7 +4,7 @@ let board = document.getElementsByClassName('board')[0];
 
 window.addEventListener('DOMContentLoaded', (event) => {
     window.requestAnimationFrame(animation);
-    
+
     console.log("window");
 });
 
@@ -29,11 +29,12 @@ function animation(time) {
  */
 function draw() {
     board.innerHTML = ""
+    drawSnake();
 };
 
 /**
  * Updates the segements to fit new position or version
  */
 function update() {
-
+    updateSnake();
 };
