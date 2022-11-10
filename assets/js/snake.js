@@ -24,15 +24,16 @@ function drawSnake(board) {
  */
 function updateSnake() {
 
+    let direction = getDirection()
     // Updates each segment but the last one in the body to make them move while removing the last one
     for (let i = BODY.length - 2; i >= 0; i--) {
         BODY[i + 1] = {
             ...BODY[i]
-        }
-    }
+        };
+    };
 
-    BODY[0].y += -1
-    BODY[0].x += 0
+    BODY[0].y += direction.y;
+    BODY[0].x += direction.x;
 
     console.log("updateSnake");
 };
