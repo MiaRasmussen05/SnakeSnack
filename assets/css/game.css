@@ -819,3 +819,45 @@ legend {
         margin: 4.5px 0 15% 65.5%;
     }
 }
+
+@media screen and (max-width: 350px) { 
+
+    /* START OF GAMEBOARD */
+
+    .game-border {
+        width: 90%;
+        height: 97.5vmin;
+        border-radius: 10px;
+        margin: 0 4%;
+        margin-top: -17px;
+    }
+    
+    .board {
+        width: 84vmin;
+        height: 84vmin;
+        border-radius: 10px;
+        margin: 0 0;
+    }
+
+    .score-board {
+        width: 86vmin;
+        font-size: 90%;
+    }
+
+    .score-wrapper {
+        width: 103.5%;
+        text-align: start;
+        margin-bottom: 1%;
+    }
+
+    .game-over {
+        transform: translate(-50%, -30%);
+    }
+
+    /* START OF CONTROLS */
+
+    .controls {
+        margin: 0 18%;
+        margin-top: 100%;
+    }
+}
