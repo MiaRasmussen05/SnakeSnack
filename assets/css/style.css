@@ -34,12 +34,12 @@ body {
     color: #DFDEE0;
     text-shadow: 0px 0px 5px #000;
     padding: 0 0.5%;
-    margin-top:  16.4%;
+    margin-top: 16.4%;
     margin-left: 2%;
     transition: all 2s ease-in;
 }
 
-#welcome h1{
+#welcome h1 {
     font-size: 90%;
 }
 
@@ -129,9 +129,9 @@ nav {
     border: 3px solid #DFDEE0;
     border-radius: 50%;
     box-shadow: 1px 1px 1px #000,
-    -1px -1px 1px #a7a7a7,
-    inset 1px 1px 1px #000,
-    inset -1px -1px 1px #a7a7a7;
+        -1px -1px 1px #a7a7a7,
+        inset 1px 1px 1px #000,
+        inset -1px -1px 1px #a7a7a7;
     padding: 14% 0 0 0;
 }
 
@@ -140,9 +140,9 @@ nav {
     text-shadow: 0 0 4px #7F0F0F;
     border: 3px solid #2D2D2D;
     box-shadow: 0px 0px 2px #000,
-    0px 0px 2px #000,
-    inset 1px 1px 1px #000,
-    inset -1px -1px 1px #000;
+        0px 0px 2px #000,
+        inset 1px 1px 1px #000,
+        inset -1px -1px 1px #000;
 }
 
 .game-body .pages {
@@ -192,7 +192,7 @@ nav {
     border: none;
     border-radius: 10px;
     box-shadow: inset 2px 2px 4px #F0F0F0,
-    inset -2px -2px 4px #3B3B3B;
+        inset -2px -2px 4px #3B3B3B;
     font-weight: 700;
     font-size: 240%;
     color: #000;
@@ -205,7 +205,7 @@ nav {
 
 .btn:hover {
     box-shadow: inset 2px 2px 4px #3B3B3B,
-    inset -2px -2px 4px #F0F0F0;
+        inset -2px -2px 4px #F0F0F0;
 }
 
 #play-btn {
@@ -216,7 +216,7 @@ nav {
 
 /* THE START OF RULES MODAL SECTION FROM HOME PAGE */
 
-.rules-modal{
+.rules-modal {
     width: 100%;
     height: 100%;
     display: none;
@@ -271,7 +271,7 @@ nav {
     margin-top: 3%;
 }
 
-.foods span{
+.foods span {
     font-size: 150%;
     font-weight: 600;
 }
@@ -295,9 +295,9 @@ nav {
 }
 
 #close-rules, #closeSettings {
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 3.3% 24% 0 0;
 }
 
@@ -310,10 +310,10 @@ nav {
 
 #close-rules:hover, #closeSettings:hover {
     font-size: 250%;
-   color: #7F0F0F;
+    color: #7F0F0F;
 }
 
-#closeSettings:hover{
+#closeSettings:hover {
     font-size: 200%;
 }
 
@@ -406,9 +406,9 @@ footer {
 }
 
 .busiHours {
-        border-spacing: 15px; 
-        margin-left: auto;
-        margin-right: auto;
+    border-spacing: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* THE START OF THE FORM FROM THE CONTACT PAGE */
@@ -508,7 +508,7 @@ textarea {
     .pages {
         margin: 0 0 0 7%;
     }
-    
+
     .pages li a {
         font-size: 110%;
     }
@@ -519,15 +519,15 @@ textarea {
         width: 76%;
         margin-top: 2%;
     }
-    
+
     .radio-wrapper {
         width: 78%;
     }
-    
+
     .form-end {
         width: 75%;
     }
-    
+
 }
 
 /* For larger screen sizes from 1280px wide and down */
@@ -538,22 +538,22 @@ textarea {
 
     #welcome {
         font-size: 510%;
-        margin-top:  18.4%;
+        margin-top: 18.4%;
     }
 
     /* START OF HEADER */
-    
+
     header {
         width: 100%;
         height: 50px;
         font-size: 150%;
     }
-    
+
     .logo {
         width: 10%;
         margin: 0.5% 0 0 1%;
     }
-    
+
     .pages {
         width: 20%;
         margin: 0 8%;
@@ -563,15 +563,15 @@ textarea {
         font-size: 90%;
         padding: 0 3%;
     }
-    
+
     .social-links {
         width: 80%;
     }
-    
+
     .social-links li {
         margin: 0 2%;
     }
-    
+
     .social-links li i {
         width: 42px;
         height: 38px;
@@ -580,7 +580,7 @@ textarea {
     }
 
     /* START OF HOME PAGE */
-    
+
     .landing-card {
         width: 93%;
     }
@@ -588,31 +588,31 @@ textarea {
     .middle {
         display: block;
     }
-    
+
     .hero-image {
         width: 75%;
         margin: auto auto;
-        
+
     }
-    
+
     .hero-image img {
         width: 100%;
         margin: 0 0;
     }
-    
+
     .buttons {
         width: 100%;
         margin-left: auto;
         margin-right: auto;
     }
-    
+
     .btn {
         width: 225px;
         height: 80px;
         font-size: 240%;
         margin: 0 5%;
     }
-    
+
     .rules-container {
         min-height: 80%;
         max-height: 80%;
@@ -621,39 +621,39 @@ textarea {
         margin: 0 auto;
         margin-top: 2.3%;
     }
-    
+
     .rules-container h2 {
         font-size: 250%;
     }
-    
+
     .rules-container h3 {
         font-size: 150%;
         font-weight: 500;
         margin: 1% 0;
     }
-    
+
     .rules-container h3 span {
         font-weight: 600;
     }
-    
+
     .rules-container h4 {
         font-size: 140%;
         padding: 2% 0;
     }
-    
+
     .rules-container p {
         font-size: 120%;
     }
-    
+
     .foods {
         margin-top: 3%;
     }
-    
-    .foods span{
+
+    .foods span {
         font-size: 150%;
         font-weight: 600;
     }
-    
+
     .apple {
         width: 20%;
     }
@@ -663,11 +663,11 @@ textarea {
         height: 20px;
         font-size: 200%;
     }
-    
+
     #close-rules {
         margin: 3.3% 24% 0 0;
     }
-    
+
     #close-rules:hover {
         font-size: 250%;
     }
@@ -678,11 +678,11 @@ textarea {
         font-size: 360%;
         padding-bottom: 3%;
     }
-    
+
     .paragrafs {
         padding: 3%;
     }
-    
+
     .paragrafs p {
         width: 50%;
         font-size: 120%;
@@ -707,7 +707,7 @@ textarea {
         width: 86%;
         margin: 2% 0 3% 0;
     }
-    
+
     .form-end {
         width: 84%;
     }
@@ -719,7 +719,7 @@ textarea {
 
     #welcome {
         font-size: 410%;
-        margin-top:  25.4%;
+        margin-top: 25.4%;
     }
 
     /* START OF HEADER */
@@ -728,7 +728,7 @@ textarea {
         margin-right: 6%;
         padding-top: 2%;
     }
-    
+
     .pages {
         font-size: 90%;
         line-height: 40px;
@@ -742,11 +742,11 @@ textarea {
     .social-links {
         margin-left: 10%;
     }
-    
+
     .social-links li {
         margin: 0 2%;
     }
-    
+
     .social-links li i {
         width: 32px;
         height: 28px;
@@ -757,19 +757,19 @@ textarea {
         border: 3px solid #DFDEE0;
         border-radius: 50%;
         box-shadow: 1px 1px 1px #000,
-        -1px -1px 1px #a7a7a7,
-        inset 1px 1px 1px #000,
-        inset -1px -1px 1px #a7a7a7;
+            -1px -1px 1px #a7a7a7,
+            inset 1px 1px 1px #000,
+            inset -1px -1px 1px #a7a7a7;
         padding: 18% 0 0 0;
     }
-    
+
     .social-links li i:hover {
         color: #2D2D2D;
         border: 3px solid #2D2D2D;
         box-shadow: 0px 0px 2px #000,
-        0px 0px 2px #000,
-        inset 1px 1px 1px #000,
-        inset -1px -1px 1px #000;
+            0px 0px 2px #000,
+            inset 1px 1px 1px #000,
+            inset -1px -1px 1px #000;
     }
 
     /* START OF FOOTER */
@@ -807,27 +807,27 @@ textarea {
         width: 100%;
         margin-top: 4%;
     }
-    
+
     form {
         font-size: 100%;
     }
-    
+
     .input-wrapper {
         width: 70%;
     }
-    
+
     .radio-wrapper {
         width: 73%;
     }
-    
+
     .form-end {
         width: 69%;
     }
-    
+
     #teArea {
         margin: 2% 0 3% 0;
     }
-    
+
     .contactBtn {
         width: 40%;
         font-size: 140%;
@@ -838,7 +838,9 @@ textarea {
 }
 
 @media screen and (min-width: 749px) {
-    .menu-container {display: none;}
+    .menu-container {
+        display: none;
+    }
 }
 
 @media screen and (max-width:748px) {
@@ -847,10 +849,12 @@ textarea {
 
     #welcome {
         font-size: 240%;
-        margin-top:  36.4%;
+        margin-top: 36.4%;
     }
-    
-    nav {display: none;}
+
+    nav {
+        display: none;
+    }
 
     /* START OF HAMBURGER MENU */
 
@@ -900,7 +904,7 @@ textarea {
         background-color: #681E1E;
     }
 
-    .menu a{
+    .menu a {
         width: 100%;
         text-decoration: none;
         color: #DFDEE0;
@@ -928,20 +932,37 @@ textarea {
         margin: 3% 4% 0 0;
     }
 
-        /* START OF HOME PAGE */
+    /* START OF HOME PAGE */
 
-        .landing-card {
-            width: 96%;
-            box-shadow: none;
-        }
-    
-        /* START OF FOOTER */
-    
-        .copyright, .disclaimer {
-            font-size: 60%;
-        }
-    
-        .disclaimer {
-            font-size: 50%;
-        }
+    .landing-card {
+        width: 96%;
+        box-shadow: none;
+    }
+
+    /* START OF FOOTER */
+
+    .copyright, .disclaimer {
+        font-size: 60%;
+    }
+
+    .disclaimer {
+        font-size: 50%;
+    }
+
+    /* START OF ABOUT PAGE */
+
+    .heading {
+        font-size: 250%;
+    }
+
+    .paragrafs {
+        display: block;
+        padding: 4% 0 4% 7%;
+    }
+
+    .paragrafs p {
+        width: 90%;
+        font-size: 100%;
+        padding: 4% 1%;
+    }
 }
