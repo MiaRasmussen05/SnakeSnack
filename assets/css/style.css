@@ -712,3 +712,63 @@ textarea {
         width: 84%;
     }
 }
+
+@media screen and (max-width: 992px) {
+
+    /* START OF WELCOME MESSAGE */
+
+    #welcome {
+        font-size: 410%;
+        margin-top:  25.4%;
+    }
+
+    /* START OF HEADER */
+
+    nav {
+        margin-right: 6%;
+        padding-top: 2%;
+    }
+    
+    .pages {
+        font-size: 90%;
+        line-height: 40px;
+        margin-left: 5%;
+    }
+
+    .pages li a {
+        margin: 0 20px;
+    }
+
+    .social-links {
+        margin-left: 10%;
+    }
+    
+    .social-links li {
+        margin: 0 2%;
+    }
+    
+    .social-links li i {
+        width: 32px;
+        height: 28px;
+        text-align: center;
+        position: relative;
+        font-size: 80%;
+        color: #DFDEE0;
+        border: 3px solid #DFDEE0;
+        border-radius: 50%;
+        box-shadow: 1px 1px 1px #000,
+        -1px -1px 1px #a7a7a7,
+        inset 1px 1px 1px #000,
+        inset -1px -1px 1px #a7a7a7;
+        padding: 18% 0 0 0;
+    }
+    
+    .social-links li i:hover {
+        color: #2D2D2D;
+        border: 3px solid #2D2D2D;
+        box-shadow: 0px 0px 2px #000,
+        0px 0px 2px #000,
+        inset 1px 1px 1px #000,
+        inset -1px -1px 1px #000;
+    }
+}
