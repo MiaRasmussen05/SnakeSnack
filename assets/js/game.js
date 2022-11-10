@@ -4,7 +4,7 @@ let board = document.getElementsByClassName('board')[0];
 
 window.addEventListener('DOMContentLoaded', (event) => {
     window.requestAnimationFrame(animation);
-
+    gameOverMessage.style.display = "none"
     console.log("window");
 });
 
@@ -12,6 +12,11 @@ window.addEventListener('DOMContentLoaded', (event) => {
  * Animation frame request that updates the game every 0.15 sec 
  */
 function animation(time) { 
+    if (gameOver) {
+        board.style.display = 'none'
+        gameOverMessage.style.display = 'block'
+
+    };
     // Calling the request anitmation frame to make animation work
     window.requestAnimationFrame(animation);
     const secondsSincePreviousRender = (time - renderTime) / 150;
@@ -40,4 +45,9 @@ function update() {
     getScore.innerHTML = score
     updateSnake();
     updateFood();
+    checkTheDeath();
+};
+
+function checkTheDeath() {
+    gameOver = outsideGrid(getTheSnakeHead()) || snakeIntersection()
 };

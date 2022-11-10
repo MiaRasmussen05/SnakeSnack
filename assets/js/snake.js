@@ -71,7 +71,7 @@ function getTheSnakeHead() {
  */
 function snakeIntersection() {
     return onTheSnake(BODY[0], {
-        ignoreHead: true
+        ignoreSnakeHead: true
     });
 };
 
