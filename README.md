@@ -149,6 +149,44 @@ It is for every person that wants either a hit of nostalgia or just a fun easy g
 
 ## __Testing__
 
+### Code validation
+   
+   Validating the code on this project I used [W3C Nu Html Checker](https://validator.w3.org/), [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/), and [JSHint](https://jshint.com/).
+
+
+   - [CSS validator css file](./readmeimages/testing/validator/validator)
+
+
+   - [JS validator for JS code on sticker page](./readmeimages/testing/validator/js)
+
+   ### Lighthouse
+
+   On google when using dev tools there is a program that test the performance, accessibility, best practices and SEO from 1-100. Using this I check each page both for desktop and mobile use to get each number. 
+
+   - __The home page lighthouse testing - desktop ~ mobile__
+
+   ![The home page lighthouse testing for desktop](./readmeimages/testing/lighthouse/indexdesktop.PNG)
+
+   ![The home page lighthouse testing for mobile](./readmeimages/testing/lighthouse/indexmobile.PNG)
+
+   - __The Sticker page lighthouse testing - desktop ~ mobile__
+
+   ![The about page lighthouse testing for desktop](./readmeimages/testing/lighthouse/aboutdesktop.PNG)
+
+   ![The about page lighthouse testing for mobile](./readmeimages/testing/lighthouse/aboutmobil.PNG)
+
+   - __The Contact page lighthouse testing - desktop ~ mobile__
+
+   ![The contact page lighthouse testing for desktop](./readmeimages/testing/lighthouse/contactdesktop.PNG)
+
+   ![The contact page lighthouse testing for mobile](./readmeimages/testing/lighthouse/contactmobil.PNG)
+
+   - __The Thanks page lighthouse testing - desktop ~ mobile__
+
+   ![The game page lighthouse testing for desktop](./readmeimages/testing/lighthouse/gamedesktop.PNG)
+
+   ![The game page lighthouse testing for mobile](./readmeimages/testing/lighthouse/gamemobil.PNG)
+
 ## __Deployment__
 
 ## __Credits__
