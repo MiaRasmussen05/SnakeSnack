@@ -3,6 +3,7 @@ const BODY = [{
     x: 13,
     y: 13
 }];
+let newSegments = 0;
 
 /**
  * Gets the style from the css to create the element of the snake 
@@ -23,7 +24,8 @@ function drawSnake(board) {
  * Updates the snakes position to move it in a direction
  */
 function updateSnake() {
-
+    
+    addMoreSegments()
     let direction = getDirection()
     // Updates each segment but the last one in the body to make them move while removing the last one
     for (let i = BODY.length - 2; i >= 0; i--) {
@@ -65,8 +67,31 @@ function getTheSnakeHead() {
 };
 
 /**
+ * Functions checks if the head of the snake hits the body 
+ */
+function snakeIntersection() {
+    return onTheSnake(BODY[0], {
+        ignoreHead: true
+    });
+};
+
+/**
  * Function to check if snake and food match up
  */
 function equalPositions(num1, num2) {
     return num1.x === num2.x && num1.y === num2.y;  
+};
+
+/**
+ * Takes and add new segments to the snake
+ */
+function addMoreSegments() {
+    for (let i = 0; i < newSegments; i++) {
+
+        BODY.push({
+            ...BODY[BODY.length - 1]
+        });
+    };
+
+    newSegments = 0
 };
