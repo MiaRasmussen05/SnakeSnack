@@ -1,7 +1,7 @@
 // Music
-const music = new Audio("assets/sound/music.mp3");
-const healtyFoodEffect = new Audio('assets/sound/healtyfood.mp3');
-const gameOverSound = new Audio('assets/sound/gameover.mp3');
+const music = new Audio("assets/sounds/music.mp3");
+const healtyFoodEffect = new Audio('assets/sounds/healtyfood.mp3');
+const gameOverSound = new Audio('assets/sounds/gameover.mp3');
 // For music button
 let musicBtnPlay = document.getElementsByClassName("music");
 let musicOff = document.getElementById("musicBtnOff");
@@ -40,7 +40,7 @@ for (var i = 0; i < musicBtnPlay.length; i++) {
   for (var i = 0; i < soundBtnPlay.length; i++) {
     soundBtnPlay[i].addEventListener("click", function () {
       if (muted) {
-        enableMute();
+        startMute();
         soundOff.style.display = 'block';
         soundOn.style.display = 'none';
       } else {
