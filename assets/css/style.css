@@ -771,4 +771,17 @@ textarea {
         inset 1px 1px 1px #000,
         inset -1px -1px 1px #000;
     }
+
+    /* START OF FOOTER */
+
+    .footer-top i {
+        margin-top: 0;
+        margin-left: 3%;
+    }
+
+    /* START OF ABOUT PAGE */
+
+    .heading {
+        font-size: 320%;
+    }
 }
