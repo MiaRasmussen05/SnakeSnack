@@ -807,4 +807,15 @@ legend {
         margin-top: 0%;
         margin-left: 40%;
     }
+
+    /* START OF CONTROLS */
+
+    .controls {
+        margin: 0 18%;
+        margin-top: 86%;
+    }
+
+    #musicBtnOn, #soundBtnOn  {
+        margin: 4.5px 0 15% 65.5%;
+    }
 }
