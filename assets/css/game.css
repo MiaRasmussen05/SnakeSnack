@@ -559,4 +559,18 @@ legend {
         margin-top: -68px;
         margin-left: 3px;
     }
+
+    /* START OF BUTTONS */
+
+    #musicBtnOff, #musicBtnOn, #soundBtnOff, #soundBtnOn {
+        width: 50px;
+        height: 50px;
+        font-size: 200%;
+        line-height: 50px;
+        border-radius: 50%;
+    }
+
+    #musicBtnOff i, #musicBtnOn i, #soundBtnOff i, #soundBtnOn i {
+        font-size: 65%;
+    }
 }
