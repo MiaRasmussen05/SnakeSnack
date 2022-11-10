@@ -671,4 +671,21 @@ textarea {
     #close-rules:hover {
         font-size: 250%;
     }
+
+    /* START OF ABOUT PAGE */
+
+    .heading {
+        font-size: 360%;
+        padding-bottom: 3%;
+    }
+    
+    .paragrafs {
+        padding: 3%;
+    }
+    
+    .paragrafs p {
+        width: 50%;
+        font-size: 120%;
+        padding: 1%;
+    }
 }
