@@ -1,7 +1,12 @@
 let renderTime = 0;
 let SPEED = 1;
+let board = document.getElementsByClassName('board')[0];
 
-window.requestAnimationFrame(animation);
+window.addEventListener('DOMContentLoaded', (event) => {
+    window.requestAnimationFrame(animation);
+    
+    console.log("window");
+});
 
 /**
  * Animation frame request that updates the game every 0.15 sec 
@@ -23,7 +28,7 @@ function animation(time) {
  * Draws only what is needed based on the new updated version
  */
 function draw() {
-
+    board.innerHTML = ""
 };
 
 /**
