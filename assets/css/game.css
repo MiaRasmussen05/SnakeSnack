@@ -574,3 +574,52 @@ legend {
         font-size: 65%;
     }
 }
+
+@media screen and (max-width: 992px) {
+
+    /* START OF GAMEBOARD */
+
+    .game-border {
+        width: 90%;
+        height: 97.5vmin;
+        position: fixed;
+        border-radius: 10px;
+        margin: 0 3%;
+        margin-top: -15px;
+    }
+    
+    .board {
+        width: 55vmin;
+        height: 55vmin;
+        border-radius: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+    }
+
+    .score-board {
+        width: 57.1vmin;
+        font-size: 100%;
+    }
+
+    .game-over {
+        font-size: 250%;
+        transform: translate(-72%, -120%);
+    }
+    
+    .restart {
+        width: 70px;
+        height: 70px;
+        font-size: 85%;
+        line-height: 70px;
+        padding: 0 0 0 0;
+        margin-top: 0%;
+        margin-left: 47%;
+    }
+    
+    /* START OF CONTROLS */
+
+    .controls {
+        margin: 15% 6% 0 0;
+    }
+}
