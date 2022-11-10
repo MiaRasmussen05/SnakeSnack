@@ -688,4 +688,27 @@ textarea {
         font-size: 120%;
         padding: 1%;
     }
+
+    /* START OF CONTACT PAGE */
+
+    form {
+        font-size: 100%;
+    }
+
+    .form-container {
+        margin: 0 0 0 20%;
+    }
+
+    .input-wrapper {
+        width: 85%;
+    }
+
+    .radio-wrapper {
+        width: 86%;
+        margin: 2% 0 3% 0;
+    }
+    
+    .form-end {
+        width: 84%;
+    }
 }
