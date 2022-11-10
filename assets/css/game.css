@@ -340,3 +340,35 @@ legend {
     transform: rotate(45deg);
     z-index: -1;
 }
+
+.point-top {
+    border-bottom-right-radius: 10px;
+    box-shadow: 2px 2px 1px #111111;
+    margin-top: -68px;
+    margin-left: 5px;
+}
+
+.point-left {
+    border-top-right-radius: 10px;
+    box-shadow: 2px -2px 1px #111111;
+    margin-top: 5px;
+    margin-left: 22px;
+}
+
+.point-right {
+    border-bottom-left-radius: 10px;
+    box-shadow: -2px 2px 1px #111111;
+    margin-top: 5px;
+    margin-left: 8px;
+}
+
+.left, .right {
+    display: flex;
+}
+
+.point-down {
+    border-top-left-radius: 10px;
+    box-shadow: -2px -2px 1px #111111;
+    margin-top: -82px;
+    margin-left: 5px;
+}
