@@ -15,7 +15,7 @@ function animation(time) {
     if (gameOver) {
         board.style.display = 'none'
         gameOverMessage.style.display = 'block'
-
+        updateNewHighScore();
     };
     // Calling the request anitmation frame to make animation work
     window.requestAnimationFrame(animation);
@@ -43,6 +43,7 @@ function draw() {
  */
 function update() {
     getScore.innerHTML = score
+    getHighscore.innerHTML = highScore
     updateSnake();
     updateFood();
     checkTheDeath();
