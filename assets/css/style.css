@@ -1104,4 +1104,27 @@ textarea {
     #close-rules {
         margin: 17% 11% 0 0;
     }
+
+    /* START OF FOOTER */
+
+    .disclaimer {
+        font-size: 50%;
+    }
+
+    /* START OF ABOUT PAGE */
+    
+    .heading {
+        font-size: 250%;
+    }
+    
+    .paragrafs {
+        display: block;
+        padding: 4% 0 4% 7%;
+    }
+    
+    .paragrafs p {
+        width: 90%;
+        font-size: 100%;
+        padding: 4% 1%;
+    }
 }
