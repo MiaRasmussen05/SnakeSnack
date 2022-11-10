@@ -37,3 +37,36 @@ function updateSnake() {
 
     console.log("updateSnake");
 };
+
+/**
+ * Get the amounts the segments will increase
+ */
+function expand(amounts) {
+    newSegments += amounts
+};
+
+/**
+ * Takes the position of the snake and checks it with the position of the food
+ */
+function onTheSnake(position, {
+    ignoreSnakeHead = false 
+    } = {}) {
+    return BODY.some((segments, index) => {
+        if (ignoreSnakeHead && index === 0) return false
+        return equalPositions(segments, position)
+    });
+};
+
+/**
+ * Function to find the position of the head 
+ */
+function getTheSnakeHead() {
+    return BODY[0];
+};
+
+/**
+ * Function to check if snake and food match up
+ */
+function equalPositions(num1, num2) {
+    return num1.x === num2.x && num1.y === num2.y;  
+};
