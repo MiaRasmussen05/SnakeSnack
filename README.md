@@ -4,6 +4,16 @@ Are you ready to help the snake grow and get some food to eat?
 Snake Snack is based on the classic Snake Game that so many people around the world have grown up with.
 It is for every person that wants either a hit of nostalgia or just a fun easy game to play. It is on a full on responsive webside with multiple options to either play the game or maybe you want to learn about the reason behind the website, or get in contact. So why not give it a try, and get lost in the game, try and beat your own high score while listening to a good song in the background.
 
+![The Snake Snack website on multiple devices from https://ui.dev/amiresponsive?](./readmeimages/snakesnack.PNG) 
+
+[The Snake Snack website on GitHub Pages](https://miarasmussen05.github.io/SnakeSnack/)
+
+![GitHub shield last commit](https://img.shields.io/github/last-commit/MiaRasmussen05/SnakeSnack?color=red)
+![GitHub shield language count](https://img.shields.io/github/languages/count/MiaRasmussen05/SnakeSnack?color=orange)
+![GitHub shield contributors](https://img.shields.io/github/contributors/MiaRasmussen05/SnakeSnack?color=yellow)
+![W3C shield Validation](https://img.shields.io/w3c-validation/html?color=brightgreen&label=w3c&targetUrl=https%3A%2F%2Fmiarasmussen05.github.io%2FSnakeSnack%2F)
+![GitHub shield top language](https://img.shields.io/github/languages/top/MiaRasmussen05/SnakeSnack?color=blueviolet&label=html)
+
 ## __User Stories__
 
 - ### First Time Visitor Goals
@@ -102,6 +112,40 @@ It is for every person that wants either a hit of nostalgia or just a fun easy g
     ![Bush for the border of the game image](./readmeimages/bush.webp)
     ![Scales image](./readmeimages/scales.webp)
     ![hero-image](./readmeimages/heroimage.webp)
+
+## Technology
+
+   ### Technologies Used
+
+   - HTML
+   - CSS
+   - JavaScript
+
+   ### Programs Used
+
+   - Git - Was used for version control, the Gitpod terminal to commit and push to GitHub.
+
+   - [GitHub](https://github.com/) - Was used to store the project code and display the project in GitHub Pages.
+
+   - Balsamiq - is an app that was used to create the wireframes.
+
+   - [Comoressor](https://compressor.io/) - Was used for compressing images to a smaller size.
+
+   - [Coolors](https://coolors.co/) - Was used for creating a pallet of the colors used.
+
+   - [Am I Responsive?](https://ui.dev/amiresponsive?) - Was used for having an image of the website on all sizes.
+   
+   - [BIRME](https://www.birme.net) - Was used to changing the images from png/jpeg to webp.
+
+   - [Font Awesome](https://fontawesome.com/) - Was used to add icons for the social links in the footer.
+
+   - Google Dev Tools- Where used to test and troubleshoot the webpage as well as fix problems with responsive design and styling.
+
+   - [Google Fonts](https://fonts.google.com/) - Where used to import every font used in the website.
+
+   - [Shields](https://shields.io/) - Was used to add different shields into the README. 
+
+   - [Favicon](https://favicon.io/) - Was used to take the logo and make it into a favicon.
 
 ## __Testing__
 
