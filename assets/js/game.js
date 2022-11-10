@@ -14,4 +14,21 @@ function animation(time) {
     renderTime = time
 
     console.log("last render");
+
+    draw();
+    update();
+};
+
+/**
+ * Draws only what is needed based on the new updated version
+ */
+function draw() {
+
+};
+
+/**
+ * Updates the segements to fit new position or version
+ */
+function update() {
+
 };
