@@ -746,3 +746,23 @@ legend {
         margin-left: 2px;
     }
 }
+
+@media screen and (max-width: 548px) {
+
+    /* START OF SETTINGS */
+
+    .settingsBtn {
+        width: 31px;
+        height: 30px;
+        position: absolute;
+        right: 0;
+        line-height: 28px;
+        font-size: 80%;
+        margin: 5px 40px 0 0;
+    }
+
+    .settings-wrapper {
+        width: 250px;
+        height: 300px;
+    }
+}
