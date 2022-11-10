@@ -410,3 +410,39 @@ legend {
     box-shadow: none;
     box-shadow: inset 2px 2px 12px #111111;
 }
+
+@media screen and (max-width: 1400px) {
+
+    /* START OF GAMEBOARD */
+
+    .game-border {
+        width: 37.4%;
+        height: 78.8vmin;
+        margin: -100px 0 0 13%;
+    }
+    
+    .board {
+        width: 72vmin;
+        height: 72vmin;
+    }
+
+    .score-wrapper {
+        width: 99%;
+        margin-bottom: 1%;
+    }
+
+    .score-board {
+        width: 74.9vmin;
+        padding: 0.5%;
+    }
+    
+    .score-board p {
+        width: 35%;
+    }
+
+    /* START OF CONTROLS */
+
+    .controls {
+        margin: 10% 10% 0 0;
+    }
+}
