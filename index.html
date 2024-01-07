@@ -16,7 +16,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    
+
     <title>Snake Snack</title>
 </head>
 
@@ -39,13 +39,13 @@
             <nav>
                 <ul class="pages">
                     <li>
-                        <a href="index.html">Home</a>
+                        <button class="nav-btn" data-target="#hero-section">Home</button>
                     </li>
                     <li>
-                        <a href="about.html">About</a>
+                        <button class="nav-btn" data-target="#about-section">About</button>
                     </li>
                     <li>
-                        <a href="contact.html">Contact</a>
+                        <button class="nav-btn" data-target="#contact-section">Contact</button>
                     </li>
                 </ul>
                 <ul class="social-links">
@@ -69,16 +69,18 @@
                 <div class="menu" id="toggleMenu">
                     <a href="#" class="close-btn" onclick="closeToggleMenu()" aria-label="close hamburger menu"><i
                             class="fas fa-times"></i></a>
-
-                    <a href="index.html">
-                        <div class="menu-li">Home</div>
-                    </a>
-                    <a href="about.html">
-                        <div class="menu-li">About</div>
-                    </a>
-                    <a href="contact.html">
-                        <div class="menu-li">Contact</div>
-                    </a>
+                    
+                    <ul class="pages">
+                        <li>
+                            <button class="nav-btn menu-li" data-target="#hero-section">Home</button>
+                        </li>
+                        <li>
+                            <button class="nav-btn menu-li" data-target="#about-section">About</button>
+                        </li>
+                        <li>
+                            <button class="nav-btn menu-li" data-target="#contact-section">Contact</button>
+                        </li>
+                    </ul>
 
                     <ul class="social-links-menu">
                         <li>
@@ -114,71 +116,193 @@
                             <i class="fas fa-music"></i>
                         </button>
                     </div>
-                    <div class="settingBtnborder">
-                        <button class="sound btnControls" onclick="endMute()" id="soundBtnOff">
-                            <i class="fas fa-volume-mute"></i>
-                        </button>
-                        <button class="sound btnControls" onclick="startMute()" id="soundBtnOn">
-                            <i class="fas fa-volume-up"></i>
-                        </button>
-                    </div>
                 </div>
                 <a href="#" class="close-btn" onclick="closeSettings()" id="closeSettings"><i
-                    class="fas fa-times"></i></a>
+                        class="fas fa-times"></i></a>
             </fieldset>
         </header>
 
         <main>
             <div class="center-container">
 
-                <!-- THE START OF MIDDLE SECTION -->
-                <div class="middle">
-                    <div class="hero-image">
-                        <img src="./assets/images/heroimage.webp" class="hero"
-                            alt="Silver snake jumping out towards the screen with snake snack in red behind it.">
-                    </div>
-                    <div class="buttons">
-                        <div class="btn" id="rules-btn">Rules</div>
-                        <div class="btn">
-                            <a id="play-btn" href="game.html">Play</a>
+                <!-- Hero Section -->
+                <section id="hero-section">
+
+                    <!-- THE START OF MIDDLE SECTION -->
+                    <div class="middle">
+                        <div class="hero-image">
+                            <img src="./assets/images/heroimage.webp" class="hero"
+                                alt="Silver snake jumping out towards the screen with snake snack in red behind it.">
                         </div>
-                    </div>
-                </div>
-
-                <!-- THE START OF RULES MODAL SECTION -->
-                <section class="rules-modal">
-
-                    <div class="rules-container">
-                        <h2>RULES</h2>
-                        <h3> <span>Welcome to Snake Snack!</span>
-                            <br>
-                            Silvers the Snake thank you for coming, he is starting to become quite hungry. However, he
-                            isn't the best at finding his food. Will you help Silvers to get the food so he can grow and
-                            not keep going hungry?
-                        </h3>
-                        <h4>I am sure you already know this, but lets just go over it one more time for the people in
-                            the back!
-                        </h4>
-                        <div>
-                            <p class="how">To control Silvers the Snake on the screen you have to push the arrow keys.
-                                Make sure you keep away from hitting the border or yourself it will make you go game
-                                over. Make him grow and earn points for as long as you can. Let's see how far you can
-                                go!</p>
-                            <div class="foods">
-                                <p class="healty">
-                                    <span>Food</span>
-                                    <br>
-                                    Every time you eat one of the apples you grow both in length and in points.
-                                    <br>
-                                    <img src="./assets/images/apple.webp" class="apple"
-                                        alt="Red apple with a green leaf">
-                                </p>
+                        <div class="buttons">
+                            <div class="btn" id="rules-btn">Rules</div>
+                            <div class="btn">
+                                <a id="play-btn" href="game.html">Play</a>
                             </div>
                         </div>
-                        <a href="#" class="close-btn" id="close-rules"><i class="fas fa-times"></i></a>
+                    </div>
+
+                    <!-- THE START OF RULES MODAL SECTION -->
+                    <div class="rules-modal">
+
+                        <div class="rules-container">
+                            <h2>RULES</h2>
+                            <h3> <span>Welcome to Snake Snack!</span>
+                                <br>
+                                Silvers the Snake thank you for coming, he is starting to become quite hungry. However,
+                                he
+                                isn't the best at finding his food. Will you help Silvers to get the food so he can grow
+                                and
+                                not keep going hungry?
+                            </h3>
+                            <h4>I am sure you already know this, but lets just go over it one more time for the people
+                                in
+                                the back!
+                            </h4>
+                            <div>
+                                <p class="how">To control Silvers the Snake on the screen you have to push the arrow
+                                    keys.
+                                    Make sure you keep away from hitting the border or yourself it will make you go game
+                                    over. Make him grow and earn points for as long as you can. Let's see how far you
+                                    can
+                                    go!</p>
+                                <div class="foods">
+                                    <p class="healty">
+                                        <span>Food</span>
+                                        <br>
+                                        Every time you eat one of the apples you grow both in length and in points.
+                                        <br>
+                                        <img src="./assets/images/apple.webp" class="apple"
+                                            alt="Red apple with a green leaf">
+                                    </p>
+                                </div>
+                            </div>
+                            <a href="#" class="close-btn" id="close-rules"><i class="fas fa-times"></i></a>
+                        </div>
+
                     </div>
 
                 </section>
+
+                <!-- About Section -->
+                <section id="about-section">
+
+                    <h1 class="heading">About Us</h1>
+                    <div class="paragrafs">
+                        <p>
+                            Snake Snack is based on the snake game most people know. Some grew up with it, as one of
+                            their first games on there mobile, others learned to love it over time. It is a game that
+                            at first dosn't take to much thought and skill, but as the snake grows it gets harder to
+                            beat your own high score! Can you beat your own score?
+                            <br>
+                            <br>
+                            It is a game that easily takes up a few hours if you are not carefull. However, most of us
+                            can't seem to stay away for to long. This is where Snake Snack comes in. A project that
+                            will grow over time. With graphic design created specially for this website, and more food
+                            designs in development.
+                            <br>
+                            Want to hear more? Well then go to the <button class="nav-btn contact-btn" data-target="#contact-section">Contact page</button> and send a message this way,
+                            I would love to hear from you.
+                        </p>
+                        <p>
+                            Snake Snack was created as a project for my second portfolio project for Code Institute Full
+                            Stack Development Diploma.
+                            <br>
+                            <br>
+                            I wanted to create a game that that I already loved, and then could make my own in some
+                            ways.
+                            <br>
+                            And who could really go wrong with a beloved game like snake?
+                            <br>
+                            To me snake is classic game that never dies.
+                            It is one of the games I remember the best from playing on my phone when I was younger, and
+                            that might be because even though it has been here since the 1970's it still is seen quite
+                            often in new games or and older version suddenly appearing. It is defiantly not a game that
+                            you forget suddenly.
+                            <br>
+                            <br>
+                            I choose a game I will be able to add on to because I love the idea behind the project. It
+                            isn't just soemthing I have to make but something I am truly exited about creating.
+                        </p>
+                    </div>
+
+                </section>
+
+                <section id="contact-section">
+
+                    <h1 class="heading">Contact Us</h1>
+                    <div class="information">
+                        <div class="answer-back">
+                            <h2>Answer</h2>
+                            <i class="fas fa-comments"></i>
+                            <br>
+                            <h3>We can't wait to get in touch!</h3>
+                            <p>
+                                <br>
+                                So don't hesitate to send message and we will get back to you as quickly as possible!
+                            </p>
+                        </div>
+                        <div class="email-box">
+                            <h2>Email</h2>
+                            <i class="fas fa-envelope"></i>
+                            <br>
+                            <span>SnakeSnack@gmail.com</span>
+                            <br>
+                            <br>
+                            <h3>Business Hours</h3>
+                            <table class="busiHours">
+                                <tr>
+                                    <td></td>
+                                    <td>Mon - Fri</td>
+                                    <td>:</td>
+                                    <td>8 am - 6 pm</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>Sat, sun</td>
+                                    <td>:</td>
+                                    <td>CLOSED</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- THE START OF THE FORM -->
+                    <div class="form-section">
+                        <form class="form-container" action="https://formsubmit.co/snakesnackwebsite@gmail.com"
+                            method="POST">
+    
+                            <div class="input-wrapper">
+                                <label for="fuName">Full Name</label>
+                                <input id="fuName" type="text" name="Full_name" class="input" placeholder="e.g. John Doe"
+                                    required>
+                                <label for="email">Email</label>
+                                <input id="email" type="email" name="Email_address" class="input"
+                                    placeholder="e.g. johndoe@gmail.com" required>
+                            </div>
+    
+                            <div class="radio-wrapper">
+                                <label for="feedback"><input id="feedback" type="radio" name="radioBtn"
+                                        class="radio feedback" required> Feedback</label>
+                                <label for="Message"><input id="Message" type="radio" name="radioBtn" class="radio message">
+                                    Message</label>
+                                <label for="collaboration"><input id="collaboration" type="radio" name="radioBtn"
+                                        class="radio collaboration">Collaboration</label>
+                            </div>
+    
+                            <div class="form-end">
+                                <label for="teArea">Message</label>
+                                <textarea id="teArea" name="textArea" placeholder="Write your message here..."
+                                    maxlength="550" required></textarea>
+                                <input type="submit" value="Send" class="contactBtn">
+                            </div>
+    
+                        </form>
+    
+                    </div>
+
+                </section>
+
             </div>
         </main>
     </div>
@@ -197,6 +321,7 @@
 
     <!-- script links-->
     <script src="./assets/js/welcome.js"></script>
+    <script src="./assets/js/sections.js"></script>
     <script src="./assets/js/menu.js"></script>
     <script src="./assets/js/sound.js"></script>
     <script src="./assets/js/rules-modal.js"></script>

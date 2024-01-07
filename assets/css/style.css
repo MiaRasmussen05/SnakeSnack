@@ -86,6 +86,10 @@ nav {
     padding-top: 1%;
 }
 
+li {
+    list-style: none;
+}
+
 .pages {
     width: 30%;
     display: flex;
@@ -95,21 +99,22 @@ nav {
     margin: 0 0 0 12%;
 }
 
-.pages li, .social-links li {
+.pages li, .social-links li, .menu-li {
     position: relative;
     display: inline-flex;
-    list-style: none;
     margin: 0 3%;
 }
 
-.pages li a {
+.nav-btn, .pages li a {
+    background-color: transparent;
+    border: none;
     text-decoration: none;
     font-size: 120%;
     color: #DFDEE0;
     margin: 0 40px;
 }
 
-.pages li a:hover {
+.nav-btn:hover, .pages li a:hover {
     color: #000;
 }
 
@@ -352,6 +357,8 @@ footer {
 
 /* THE START OF ABOUT PARAGRAFS SECTION FROM ABOUT PAGE */
 
+#about-section {display: none;}
+
 .heading {
     font-family: 'Cormorant', sans-serif;
     font-size: 400%;
@@ -371,7 +378,15 @@ footer {
     padding: 1%;
 }
 
+.contact-btn {
+    font-size: 100%;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+
 /* THE START OF INFORMATION SECTION FROM THE CONTACT PAGE */
+#contact-section {display: none;}
 
 .information {
     width: 50%;
@@ -509,7 +524,7 @@ textarea {
         margin: 0 0 0 7%;
     }
 
-    .pages li a {
+    .nav-btn, .pages li a {
         font-size: 110%;
     }
 
@@ -559,7 +574,7 @@ textarea {
         margin: 0 8%;
     }
 
-    .pages li a {
+    .pages li .nav-btn, .pages li a {
         font-size: 90%;
         padding: 0 3%;
     }
@@ -735,7 +750,7 @@ textarea {
         margin-left: 5%;
     }
 
-    .pages li a {
+    .pages li .nav-btn, .pages li a {
         margin: 0 20px;
     }
 
@@ -895,16 +910,30 @@ textarea {
         }
     }
 
-    .menu .menu-li {
-        padding: 10px 0;
-        margin-top: 10px;
+    .pages {
+        width: 100%;
+        display: block;
+        text-align: center;
+        margin: 10px 0 0 0;
+    }
+
+    .pages li, .pages li .nav-btn {
+        display: flex; /* Use flexbox */
+        align-items: center; /* Center items vertically */
+        justify-content: center;
+        text-decoration: none;
+        text-align: center;
+        font-size: 105%;
+        color: #DFDEE0;
+        padding: 7px 0;
+        margin: 0;
     }
 
     .menu .menu-li:hover {
         background-color: #681E1E;
     }
 
-    .menu a {
+    .menu .nav-btn, .menu a {
         width: 100%;
         text-decoration: none;
         color: #DFDEE0;
@@ -916,7 +945,6 @@ textarea {
     }
 
     .social-links-menu li {
-        list-style: none;
         text-align: center;
         padding: 0 15px;
     }
