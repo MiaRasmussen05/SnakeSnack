@@ -10,22 +10,25 @@ window.addEventListener('DOMContentLoaded', (event) => {
 /**
  * Animation frame request that updates the game every 0.15 sec 
  */
-function animation(time) { 
+function animation(time) {
     if (gameOver) {
         board.style.display = 'none';
         gameOverMessage.style.display = 'block';
         updateNewHighScore();
         gameOverSound.play();
-        gameOverSound.loop() = false;
+        gameOverSound.loop = false;
+        return; // Exit the animation loop on game over
     }
-    // Calling the request anitmation frame to make animation work
+
     window.requestAnimationFrame(animation);
-    const secondsSincePreviousRender = (time - renderTime) / 150;
-    if (secondsSincePreviousRender < 1 / SPEED) return;
+
+    const frameDuration = time - renderTime;
+    if (frameDuration < 400 / SPEED) return; // Control frame rate based on SPEED
+
     renderTime = time;
 
-    draw();
-    update();
+    draw(); // Draw elements first
+    update(); // Update after drawing
 }
 
 /**
@@ -46,6 +49,8 @@ function update() {
     updateSnake();
     updateFood();
     checkTheDeath();
+
+    updateLevelAndSpeed(score);
 }
 
 function checkTheDeath() {

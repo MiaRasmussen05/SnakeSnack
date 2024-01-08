@@ -46,6 +46,8 @@ function expand(amounts) {
     healtyFoodEffect.playbackRate = 1;
     healtyFoodEffect.play();
     healtyFoodEffect.currentTime = 0;
+
+    score += amounts; // Update the score when the snake expands
 }
 
 /**
