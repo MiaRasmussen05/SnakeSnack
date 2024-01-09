@@ -27,23 +27,36 @@ function displayLevelMessage(level) {
 }
 
 function updateLevelAndSpeed(score) {
-    if (score >= (level + 1) * 20) {
+    if (score >= (level + 1) * 50) {
         level++;
         if (!isMessageDisplayed) {
             displayLevelMessage(level); // Display level message when level changes
         }
 
-        if (level % 7 === 0) {
-            specialLevel = true;
+        // Generate a random number between 0 and 1
+        const randomChance = Math.random();
+
+        specialLevel = randomChance < 0.2;
+
+        if (specialLevel) {
+            regularSpeed += SPEED_INCREMENT; // Increase regular speed upon reaching special level
+            SPEED = 1; // Set speed to 1 for the special level
         } else {
-            specialLevel = false;
-            regularSpeed += SPEED_INCREMENT; // Increment regular speed
+            regularSpeed += SPEED_INCREMENT; // Increase regular speed if not a special level
+            SPEED = regularSpeed;
         }
 
-        // Set speed to 0 when the message is displayed, then restore regular or special level speed
-        SPEED = isMessageDisplayed ? 0 : (specialLevel ? 1 : regularSpeed);
+        setTimeout(() => {
+            SPEED = 0;
+            setTimeout(() => {
+                // Resume regular or special level speed after the pause
+                SPEED = specialLevel ? 1 : regularSpeed;
+            }, 1500); // Pause between levels 
+        }, 0); // Delay before slowing down
     } else {
-        // Ensure the speed matches the regular speed when not updating the level
-        SPEED = regularSpeed;
+        if (!specialLevel) {
+            // Speed matches the regular speed when the level is not updating
+            SPEED = regularSpeed;
+        }
     }
 }
