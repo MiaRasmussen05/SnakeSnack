@@ -5,7 +5,7 @@ let regularSpeed = SPEED; // Store regular speed value
 let isMessageDisplayed = false;
 
 const levelMessage = document.createElement('div');
-levelMessage.classList.add('level-message', 'show-message');
+levelMessage.classList.add('level-message');
 document.body.appendChild(levelMessage);
 
 function displayLevelMessage(level) {
@@ -16,10 +16,14 @@ function displayLevelMessage(level) {
     // Pause the game while the message is displayed
     SPEED = 0;
 
+    levelMessage.classList.add('show-message');
+
     setTimeout(() => {
         levelMessage.style.opacity = '0'; // Hide the message after a delay
         isMessageDisplayed = false;
         levelMessage.classList.remove('show-message');
+        levelMessage.classList.remove('fade-out');
+        levelMessage.style.left = '0';
 
         // Resume the regular or special level speed after the message disappears
         SPEED = specialLevel ? 1 : regularSpeed;
