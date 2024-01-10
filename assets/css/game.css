@@ -38,7 +38,7 @@
     box-shadow: 0 0 5px #000;
     transform: translate(-50%, -50%);
     margin: auto auto;
-    z-index: 999;
+    z-index: 1000;
 }
 
 legend {

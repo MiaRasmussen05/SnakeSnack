@@ -25,58 +25,26 @@
     <div class="landing-card">
 
         <header>
-            <div class="logo">
-                <a href="index.html">
-                    <img src="./assets/images/logo.webp"
-                        alt="Snake Snack logo of black snake around apple button click to go to home page">
-                </a>
-            </div>
-
-            <nav>
-                <ul class="pages">
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="about.html">About</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
-                    </li>
-                </ul>
-                <ul class="social-links">
-                    <li>
-                        <a href="https://www.facebook.com" target="_blank" rel="noopener"
-                            aria-label="(opens in a new tab)"><i class="fab fa-facebook"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/MiaRasmussen05/SnakeSnack" target="_blank" rel="noopener"
-                            aria-label="(opens in a new tab)"><i class="fab fa-github"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com" target="_blank" rel="noopener"
-                            aria-label="(opens in a new tab)"><i class="fab fa-twitter"></i></a>
-                    </li>
-                </ul>
-            </nav>
-
-            <!-- THE START OF HAMBURGER MENU -->
-            <div class="menu-container">
-                <div class="menu" id="toggleMenu">
-                    <a href="#" class="close-btn" onclick="closeToggleMenu()" aria-label="close hamburger menu"><i
-                            class="fas fa-times"></i></a>
-
+                <div class="logo">
                     <a href="index.html">
-                        <div class="menu-li">Home</div>
+                        <img src="./assets/images/logo.webp"
+                            alt="Snake Snack logo of black snake around apple button click to go to home page">
                     </a>
-                    <a href="about.html">
-                        <div class="menu-li">About</div>
-                    </a>
-                    <a href="contact.html">
-                        <div class="menu-li">Contact</div>
-                    </a>
-
-                    <ul class="social-links-menu">
+                </div>
+    
+                <nav>
+                    <ul class="pages">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <ul class="social-links">
                         <li>
                             <a href="https://www.facebook.com" target="_blank" rel="noopener"
                                 aria-label="(opens in a new tab)"><i class="fab fa-facebook"></i></a>
@@ -90,38 +58,72 @@
                                 aria-label="(opens in a new tab)"><i class="fab fa-twitter"></i></a>
                         </li>
                     </ul>
-                </div>
-                <a href="#" class="menu-bars" onclick="openToggleMenu()" aria-label="hamburger menu"><i
-                        class="fas fa-bars"></i></a>
-            </div>
-
-            <!-- THE START OF SETTINGS MENU -->
-            <div class="settingsBtn" onclick="openSettings()">
-                <i class="fas fa-cog"></i>
-            </div>
-            <fieldset class="settings-wrapper" id="settings">
-                <legend><i class="fas fa-cog"></i></legend>
-                <div class="settingBtns">
-                    <div class="settingBtnborder">
-                        <button class="btnControls music" id="musicBtnOff">
-                            <i class="fas fa-pause"></i>
-                        </button>
-                        <button class="btnControls music" id="musicBtnOn">
-                            <i class="fas fa-music"></i>
-                        </button>
+                </nav>
+    
+                <!-- THE START OF HAMBURGER MENU -->
+                <div class="menu-container">
+                    <div class="menu" id="toggleMenu">
+                        <a href="#" class="close-btn" onclick="closeToggleMenu()" aria-label="close hamburger menu"><i
+                                class="fas fa-times"></i></a>
+    
+                        <a href="index.html">
+                            <div class="menu-li">Home</div>
+                        </a>
+                        <a href="about.html">
+                            <div class="menu-li">About</div>
+                        </a>
+                        <a href="contact.html">
+                            <div class="menu-li">Contact</div>
+                        </a>
+    
+                        <ul class="social-links-menu">
+                            <li>
+                                <a href="https://www.facebook.com" target="_blank" rel="noopener"
+                                    aria-label="(opens in a new tab)"><i class="fab fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/MiaRasmussen05/SnakeSnack" target="_blank" rel="noopener"
+                                    aria-label="(opens in a new tab)"><i class="fab fa-github"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com" target="_blank" rel="noopener"
+                                    aria-label="(opens in a new tab)"><i class="fab fa-twitter"></i></a>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="settingBtnborder">
-                        <button class="sound btnControls" onclick="endMute()" id="soundBtnOff">
-                            <i class="fas fa-volume-mute"></i>
-                        </button>
-                        <button class="sound btnControls" onclick="startMute()" id="soundBtnOn">
-                            <i class="fas fa-volume-up"></i>
-                        </button>
-                    </div>
+                    <a href="#" class="menu-bars" onclick="openToggleMenu()" aria-label="hamburger menu"><i
+                            class="fas fa-bars"></i></a>
                 </div>
-                <a href="#" class="close-btn" onclick="closeSettings()" id="closeSettings"><i
-                    class="fas fa-times"></i></a>
-            </fieldset>
+    
+                <!-- THE START OF SETTINGS MENU -->
+                <div class="settingsBtn" id="settingsBtn" onclick="openSettings()">
+                    <i class="fas fa-cog"></i>
+                </div>
+                <div class="overlay">
+                <fieldset class="settings-wrapper" id="settings">
+                    <legend><i class="fas fa-cog"></i></legend>
+                    <div class="settingBtns">
+                        <div class="settingBtnborder">
+                            <button class="btnControls music" id="musicBtnOff">
+                                <i class="fas fa-pause"></i>
+                            </button>
+                            <button class="btnControls music" id="musicBtnOn">
+                                <i class="fas fa-music"></i>
+                            </button>
+                        </div>
+                        <div class="settingBtnborder">
+                            <button class="sound btnControls" onclick="endMute()" id="soundBtnOff">
+                                <i class="fas fa-volume-mute"></i>
+                            </button>
+                            <button class="sound btnControls" onclick="startMute()" id="soundBtnOn">
+                                <i class="fas fa-volume-up"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <a href="#" class="close-btn" onclick="closeSettings()" id="closeSettings"><i
+                        class="fas fa-times"></i></a>
+                </fieldset>
+            </div>
         </header>
 
         <main>

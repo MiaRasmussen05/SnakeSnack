@@ -66,6 +66,7 @@
 
             <!-- THE START OF HAMBURGER MENU -->
             <div class="menu-container">
+                <div class="overlayMenu">
                 <div class="menu" id="toggleMenu">
                     <a href="#" class="close-btn" onclick="closeToggleMenu()" aria-label="close hamburger menu"><i
                             class="fas fa-times"></i></a>
@@ -97,7 +98,8 @@
                         </li>
                     </ul>
                 </div>
-                <a href="#" class="menu-bars" onclick="openToggleMenu()" aria-label="hamburger menu"><i
+                </div>
+                <a href="#" class="menu-bars menuBtn" onclick="openToggleMenu()" aria-label="hamburger menu"><i
                         class="fas fa-bars"></i></a>
             </div>
 
@@ -105,21 +107,31 @@
             <div class="settingsBtn" onclick="openSettings()">
                 <i class="fas fa-cog"></i>
             </div>
-            <fieldset class="settings-wrapper" id="settings">
-                <legend><i class="fas fa-cog"></i></legend>
-                <div class="settingBtns">
-                    <div class="settingBtnborder">
-                        <button class="btnControls music" id="musicBtnOff">
-                            <i class="fas fa-pause"></i>
-                        </button>
-                        <button class="btnControls music" id="musicBtnOn">
-                            <i class="fas fa-music"></i>
-                        </button>
+            <div class="overlay">
+                <fieldset class="settings-wrapper" id="settings">
+                    <legend><i class="fas fa-cog"></i></legend>
+                    <div class="settingBtns">
+                        <div class="settingBtnborder">
+                            <button class="btnControls music" id="musicBtnOff">
+                                <i class="fas fa-pause"></i>
+                            </button>
+                            <button class="btnControls music" id="musicBtnOn">
+                                <i class="fas fa-music"></i>
+                            </button>
+                        </div>
+                        <div class="settingBtnborder">
+                            <button class="sound btnControls" onclick="endMute()" id="soundBtnOff">
+                                <i class="fas fa-volume-mute"></i>
+                            </button>
+                            <button class="sound btnControls" onclick="startMute()" id="soundBtnOn">
+                                <i class="fas fa-volume-up"></i>
+                            </button>
+                        </div>
                     </div>
-                </div>
-                <a href="#" class="close-btn" onclick="closeSettings()" id="closeSettings"><i
+                    <a href="#" class="close-btn" onclick="closeSettings()" id="closeSettings"><i
                         class="fas fa-times"></i></a>
-            </fieldset>
+                </fieldset>
+            </div>
         </header>
 
         <main>
@@ -322,10 +334,10 @@
     <!-- script links-->
     <script src="./assets/js/welcome.js"></script>
     <script src="./assets/js/sections.js"></script>
-    <script src="./assets/js/menu.js"></script>
     <script src="./assets/js/sound.js"></script>
     <script src="./assets/js/rules-modal.js"></script>
     <script src="./assets/js/copyrights.js"></script>
+    <script src="./assets/js/menu.js"></script>
 
 </body>
 

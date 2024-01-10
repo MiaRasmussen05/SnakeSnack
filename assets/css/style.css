@@ -155,6 +155,17 @@ li {
     visibility: hidden;
 }
 
+.overlay, .overlayMenu {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    z-index: 999;
+}
+
 /* CENTER CONTAINER */
 
 .center-container {
