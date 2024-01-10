@@ -896,18 +896,17 @@ textarea {
     }
 
     .menu {
-        width: 160px;
+        width: 100%;
         height: 240px;
         display: none;
         position: fixed;
         top: 0;
         right: 0;
         background-color: #2B2B2C;
-        border-radius: 10px;
         box-shadow: 0 0 10px #000;
         text-align: center;
         padding: 4% 2% 1% 2%;
-        margin: 10px 10px 0 0;
+        margin: 10px 0 0 0;
         z-index: 4;
         animation: menu-show 1s ease forwards;
     }
