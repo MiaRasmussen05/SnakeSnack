@@ -172,26 +172,28 @@ legend {
     color: #FFF;
     font-size: 400%;
     opacity: 0;
+    display: none;
     white-space: nowrap;
     z-index: 999;
 }
 
 .show-message {
-    animation: fadeInOut 2s ease-in-out forwards; /* 'forwards' to maintain final state of animation */
+    display: block;
+    animation: fadeInOut 2s ease-in-out forwards;
 }
 
 @keyframes fadeInOut {
     0% {
         opacity: 0;
-        transform: translateX(10%); /* Move off-screen to the left */
+        transform: translateX(10%);
     }
     50% {
         opacity: 1;
-        transform: translateX(45%); /* Move to the center of the screen */
+        transform: translateX(45%);
     }
     100% {
         opacity: 0;
-        transform: translateX(80%); /* Move off-screen to the right */
+        transform: translateX(80%);
     }
 }
 
