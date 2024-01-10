@@ -197,6 +197,24 @@ legend {
     }
 }
 
+.pause-message {
+    width: 95vw;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFF;
+    font-size: 700%;
+    text-shadow: 3px 3px 1px #353535, 2px 2px 1px #353535, 10px 12px 10px #000;
+    text-align: center;
+    z-index: 999;
+}
+
+.show-pause {
+    width: 20%;
+    display: block;
+}
 
 .game-border {
     width: 37.4%;
