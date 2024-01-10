@@ -38,7 +38,7 @@
     box-shadow: 0 0 5px #000;
     transform: translate(-50%, -50%);
     margin: auto auto;
-    z-index: 4;
+    z-index: 999;
 }
 
 legend {
@@ -174,7 +174,7 @@ legend {
     opacity: 0;
     display: none;
     white-space: nowrap;
-    z-index: 999;
+    z-index: 888;
 }
 
 .show-message {
@@ -208,7 +208,7 @@ legend {
     font-size: 700%;
     text-shadow: 3px 3px 1px #353535, 2px 2px 1px #353535, 10px 12px 10px #000;
     text-align: center;
-    z-index: 999;
+    z-index: 888;
 }
 
 .show-pause {
