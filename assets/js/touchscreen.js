@@ -1,10 +1,8 @@
 let touchStartX = 0;
 let touchStartY = 0;
 
-const board = document.getElementsByClassName('board')[0];
-
-board.addEventListener('touchstart', handleTouchStart, false);
-board.addEventListener('touchmove', handleTouchMove, false);
+document.addEventListener('touchstart', handleTouchStart, false);
+document.addEventListener('touchmove', handleTouchMove, false);
 
 function handleTouchStart(event) {
     touchStartX = event.touches[0].clientX;
