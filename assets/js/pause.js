@@ -19,6 +19,22 @@ function displayPauseMessage(pause) {
 
 // Event listener for the pause button click
 pauseBtn.addEventListener('click', () => {
+    togglePause();
+});
+
+// Event listener for double-clicking on the screen
+document.body.addEventListener('dblclick', () => {
+    togglePause();
+});
+
+// Event listener for pressing "P" on the keyboard
+document.addEventListener('keydown', (event) => {
+    if (event.key.toLowerCase() === 'p') {
+        togglePause();
+    }
+});
+
+function togglePause() {
     if (SPEED !== 0) {
         previousSpeed = SPEED;
         SPEED = 0;
@@ -30,4 +46,4 @@ pauseBtn.addEventListener('click', () => {
         isPauseDisplayed = false;
         pauseMessage.classList.remove('show-pause');
     }
-});
+}
