@@ -7,6 +7,12 @@ window.addEventListener('DOMContentLoaded', (event) => {
     gameOverMessage.style.display = "none";
 });
 
+function isSnakeMoving() {
+    // Add your logic to check if the snake is moving
+    // For example, you can check if the direction is non-zero
+    return direction.x !== 0 || direction.y !== 0;
+}
+
 /**
  * Animation frame request that updates the game every 0.15 sec 
  */
@@ -18,6 +24,12 @@ function animation(time) {
         gameOverSound.play();
         gameOverSound.loop = false;
         return; // Exit the animation loop on game over
+    }
+
+    if (!gameStarted && isSnakeMoving()) {
+        // The snake has started moving, hide the "START GAME" message
+        gameStarted = true;
+        startGameMessage.style.display = 'none';
     }
 
     window.requestAnimationFrame(animation);

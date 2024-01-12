@@ -197,7 +197,7 @@ legend {
     }
 }
 
-.pause-message {
+.pause-message, .start-game-message {
     width: 95vw;
     display: none;
     position: absolute;
@@ -209,6 +209,27 @@ legend {
     text-shadow: 3px 3px 1px #353535, 2px 2px 1px #353535, 10px 12px 10px #000;
     text-align: center;
     z-index: 888;
+}
+
+.start-game-message {
+    display: block;
+    font-size: 400%;
+    text-shadow: 1px 1px 1px #353535,
+    2px 2px 1px #353535, 3px 3px 1px #353535, 
+    10px 12px 10px #000;
+    animation: fading 3s ease-in-out infinite;
+}
+
+@keyframes fading {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 
 .show-pause {

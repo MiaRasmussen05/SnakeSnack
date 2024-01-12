@@ -19,22 +19,34 @@ function displayPauseMessage(pause) {
 
 // Event listener for the pause button click
 pauseBtn.addEventListener('click', () => {
-    togglePause();
+    if (gameStarted) {
+        togglePause();
+    }
 });
 
 // Event listener for double-clicking on the screen
 document.body.addEventListener('dblclick', () => {
-    togglePause();
+    if (gameStarted) {
+        togglePause();
+    }
 });
-
 // Event listener for pressing "P" on the keyboard
 document.addEventListener('keydown', (event) => {
-    if (event.key.toLowerCase() === 'p') {
+    if (gameStarted && event.key.toLowerCase() === 'p') {
         togglePause();
     }
 });
 
 function togglePause() {
+    // Check game is over and if so, do not toggle the pause
+    if (!gameStarted) {
+        return;
+    }
+
+    if (gameOver) {
+        return;
+    }
+
     if (SPEED !== 0) {
         previousSpeed = SPEED;
         SPEED = 0;
