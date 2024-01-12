@@ -23,6 +23,7 @@ function animation(time) {
         updateNewHighScore();
         gameOverSound.play();
         gameOverSound.loop = false;
+        displayLeaderboard();
         return; // Exit the animation loop on game over
     }
 

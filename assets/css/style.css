@@ -18,6 +18,21 @@ body {
     overflow: hidden;
 }
 
+.leaderboard-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Add styles for the leaderboard entries */
+#leaderboard {
+    list-style-type: none;
+    padding: 0;
+}
+
+#leaderboard li {
+    margin: 5px;
+}
+
 /* START OF WELCOME MESSAGE */
 
 #welcome {

@@ -1,11 +1,7 @@
-// Declare the localStorage
-let highScore = localStorage.getItem('highScore');
-let getHighscore = document.getElementsByClassName('highScore')[0];
-let highscore = 0;
+// Get leaderboard data from local storage or initialize an empty array
+let leaderboardData = JSON.parse(localStorage.getItem('leaderboard')) || [];
 
-/**
- * Highscore gets updated if the new score is higher then the last highscore in the local storage
- */
+// Update new high score and add it to the leaderboard
 function updateNewHighScore() {
     const oldHighScore = getHighScore();
     if (highScore === null) {
@@ -29,9 +25,6 @@ function updateNewHighScore() {
 
             // Save the updated leaderboard to local storage
             localStorage.setItem('leaderboard', JSON.stringify(leaderboardData));
-
-            // Call displayLeaderboard to update the displayed leaderboard
-            displayLeaderboard();
         }
     }
 
@@ -40,9 +33,21 @@ function updateNewHighScore() {
     }
 }
 
-/**
- * Get the highScore from the local storage or 0
- */
-function getHighScore() {
-    return parseInt(localStorage.getItem("highScore")) || 0;
+// Function to display the leaderboard data
+function displayLeaderboard() {
+    // Access the DOM element where you want to display the leaderboard
+    const leaderboardElement = document.getElementById('leaderboard');
+
+    // Clear existing content
+    leaderboardElement.innerHTML = '';
+
+    // Iterate through the leaderboard data and create HTML elements
+    leaderboardData.forEach((entry, index) => {
+        const listItem = document.createElement('li');
+        listItem.textContent = `${index + 1}. ${entry.name} - ${entry.score}`;
+        leaderboardElement.appendChild(listItem);
+    });
 }
+
+// Call this function to display the leaderboard when needed
+displayLeaderboard();
