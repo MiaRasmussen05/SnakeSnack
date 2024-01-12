@@ -212,11 +212,13 @@ legend {
 }
 
 .start-game-message {
+    width: 20%;
     display: block;
     font-size: 400%;
     text-shadow: 1px 1px 1px #353535,
     2px 2px 1px #353535, 3px 3px 1px #353535, 
     10px 12px 10px #000;
+    white-space: nowrap;
     animation: fading 3s ease-in-out infinite;
 }
 
