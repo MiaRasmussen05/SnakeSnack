@@ -31,7 +31,7 @@ function displayLevelMessage(level) {
 }
 
 function updateLevelAndSpeed(score) {
-    if (score >= level * 50) {
+    if (score >= level * 50 && regularSpeed < 13) {
         level++;
         if (!isMessageDisplayed) {
             displayLevelMessage(level); // Display level message when level changes
