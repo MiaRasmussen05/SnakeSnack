@@ -74,7 +74,11 @@ function drawNewFood() {
 function resetFoodTimeout() {
     clearTimeout(foodTimeout);
     foodTimeout = setTimeout(() => {
-        drawNewFood();
+        if (!isPauseDisplayed) {
+            drawNewFood()
+        } else {
+            resetFoodTimeout();
+        }
     }, 7000);
 }
 

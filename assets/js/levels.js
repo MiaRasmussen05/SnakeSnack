@@ -1,4 +1,4 @@
-let level = 0;
+let level = 1;
 const SPEED_INCREMENT = 0.5;
 let specialLevel = false;
 let regularSpeed = SPEED; // Store regular speed value
@@ -31,7 +31,7 @@ function displayLevelMessage(level) {
 }
 
 function updateLevelAndSpeed(score) {
-    if (score >= (level + 1) * 50) {
+    if (score >= level * 50) {
         level++;
         if (!isMessageDisplayed) {
             displayLevelMessage(level); // Display level message when level changes
@@ -44,7 +44,7 @@ function updateLevelAndSpeed(score) {
 
         if (specialLevel) {
             regularSpeed += SPEED_INCREMENT; // Increase regular speed upon reaching special level
-            SPEED = 1; // Set speed to 1 for the special level
+            SPEED = 1;
         } else {
             regularSpeed += SPEED_INCREMENT; // Increase regular speed if not a special level
             SPEED = regularSpeed;
@@ -55,8 +55,8 @@ function updateLevelAndSpeed(score) {
             setTimeout(() => {
                 // Resume regular or special level speed after the pause
                 SPEED = specialLevel ? 1 : regularSpeed;
-            }, 1500); // Pause between levels 
-        }, 0); // Delay before slowing down
+            }, 1500);
+        }, 0);
     } else {
         if (!specialLevel) {
             // Speed matches the regular speed when the level is not updating
