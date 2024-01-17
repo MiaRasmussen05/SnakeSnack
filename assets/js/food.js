@@ -73,13 +73,22 @@ function drawNewFood() {
 
 function resetFoodTimeout() {
     clearTimeout(foodTimeout);
+
+    if (level >= 20) {
+        timeoutDuration = 5000;
+    } else if (level >= 10) {
+        timeoutDuration = 7000;
+    } else {
+        timeoutDuration = 12000;
+    }
+
     foodTimeout = setTimeout(() => {
         if (!isPauseDisplayed) {
             drawNewFood()
         } else {
             resetFoodTimeout();
         }
-    }, 7000);
+    }, timeoutDuration);
 }
 
 /**
