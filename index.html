@@ -67,37 +67,37 @@
             <!-- THE START OF HAMBURGER MENU -->
             <div class="menu-container">
                 <div class="overlayMenu">
-                <div class="menu" id="toggleMenu">
-                    <a href="#" class="close-btn" onclick="closeToggleMenu()" aria-label="close hamburger menu"><i
-                            class="fas fa-times"></i></a>
-                    
-                    <ul class="pages">
-                        <li>
-                            <button class="nav-btn menu-li" data-target="#hero-section">Home</button>
-                        </li>
-                        <li>
-                            <button class="nav-btn menu-li" data-target="#about-section">About</button>
-                        </li>
-                        <li>
-                            <button class="nav-btn menu-li" data-target="#contact-section">Contact</button>
-                        </li>
-                    </ul>
+                    <div class="menu" id="toggleMenu">
+                        <a href="#" class="close-btn" onclick="closeToggleMenu()" aria-label="close hamburger menu"><i
+                                class="fas fa-times"></i></a>
 
-                    <ul class="social-links-menu">
-                        <li>
-                            <a href="https://www.facebook.com" target="_blank" rel="noopener"
-                                aria-label="(opens in a new tab)"><i class="fab fa-facebook"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/MiaRasmussen05/SnakeSnack" target="_blank" rel="noopener"
-                                aria-label="(opens in a new tab)"><i class="fab fa-github"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com" target="_blank" rel="noopener"
-                                aria-label="(opens in a new tab)"><i class="fab fa-twitter"></i></a>
-                        </li>
-                    </ul>
-                </div>
+                        <ul class="pages">
+                            <li>
+                                <button class="nav-btn menu-li" data-target="#hero-section">Home</button>
+                            </li>
+                            <li>
+                                <button class="nav-btn menu-li" data-target="#about-section">About</button>
+                            </li>
+                            <li>
+                                <button class="nav-btn menu-li" data-target="#contact-section">Contact</button>
+                            </li>
+                        </ul>
+
+                        <ul class="social-links-menu">
+                            <li>
+                                <a href="https://www.facebook.com" target="_blank" rel="noopener"
+                                    aria-label="(opens in a new tab)"><i class="fab fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/MiaRasmussen05/SnakeSnack" target="_blank" rel="noopener"
+                                    aria-label="(opens in a new tab)"><i class="fab fa-github"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com" target="_blank" rel="noopener"
+                                    aria-label="(opens in a new tab)"><i class="fab fa-twitter"></i></a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <a href="#" class="menu-bars menuBtn" onclick="openToggleMenu()" aria-label="hamburger menu"><i
                         class="fas fa-bars"></i></a>
@@ -129,7 +129,7 @@
                         </div>
                     </div>
                     <a href="#" class="close-btn" onclick="closeSettings()" id="closeSettings"><i
-                        class="fas fa-times"></i></a>
+                            class="fas fa-times"></i></a>
                 </fieldset>
             </div>
         </header>
@@ -156,9 +156,8 @@
 
                     <!-- THE START OF RULES MODAL SECTION -->
                     <div class="rules-modal">
-
                         <div class="rules-container">
-                            <h2>RULES</h2>
+                            <!-- <h2>RULES</h2>
                             <h3> <span>Welcome to Snake Snack!</span>
                                 <br>
                                 Silvers the Snake thank you for coming, he is starting to become quite hungry. However,
@@ -209,7 +208,74 @@
                                         <br>
                                         <img src="./assets/images/chocolate.webp" class="apple"
                                                 alt="Red apple with a green leaf">
+                                    </p> -->
+                            <div>
+                                <div class="page" id="page1">
+                                    <h1>Welcome to Snake Snack!</h1>
+                                    <br>
+                                    <br>
+                                    Silvers the Snake thank you for coming, he is starting to become quite hungry.
+                                    However,
+                                    he isn't the best at finding his food. Will you help Silvers to get the food so
+                                    he can grow and not keep going hungry?
+                                    </h3>
+                                    <h4>I am sure you already know this, but lets just go over it one more time for the
+                                        people
+                                        in the back!
+                                    </h4>
+                                    <p class="how">To control Silvers the Snake on the screen you have to push the arrow
+                                        keys on the keyboard or the buttons on the scren. On touch screen you can swipe
+                                        the way you want to go.
+                                        Make sure you keep away from hitting the border or yourself it will make you go
+                                        game
+                                        over. Make him grow and earn points for as long as you can. Let's see how far
+                                        you
+                                        can go!
                                     </p>
+                                    <p class="how">
+                                        <br>
+                                        Need to go quickly or maybe talk to someone? Well here is the answer just pause
+                                        the Snake!
+                                        You can do this by doble clicking on touch screens or with the mouse. Have the
+                                        controls out? Then just click the pause button. Now you have control of when you
+                                        play.
+                                    </p>
+                                    </p>
+                                </div>
+                                <div class="page" id="page2">
+                                    <h1>Levels</h1>
+                                    <p class="how healty">
+                                        <br>
+                                        Get enought points to get to the next level. 
+                                        Silvers will keep speeding up for each level you reach. 
+                                        If you see Silvers slowing down be carefull he might be tired and need a bit 
+                                        of a break but suddenly he will speed up to your fastes speed again! 
+                                    </p>
+                                </div>
+                                <div class="page" id="page3">
+                                    <h1>Food</h1>
+                                    <p><br>
+                                        Every time you eat one of the apples you grow both in length and in points.
+                                        Every apples earns you 10 points.
+                                        However you need to be quick or they will be gone before you get there!
+                                        <br>
+                                        <img src="./assets/images/apple.webp" class="apple"
+                                            alt="Red apple with a green leaf">
+                                        <br>
+                                        Choclate bars will also show up every now and again. Silvers might love choclate
+                                        so you got to make sure he does not eat it. If he does get his mounth on it
+                                        though you will lose
+                                        5 points!
+                                        <br>
+                                        <img src="./assets/images/chocolate.webp" class="apple"
+                                            alt="Red apple with a green leaf"></p>
+                                </div>
+
+                                <div class="navigation">
+                                    <button class="backBtn" id="prevPage" onclick="prevPage()"><i
+                                            class="fas fa-arrow-alt-circle-left"></i></button>
+                                    <button class="nextBtn" id="nextPage" onclick="nextPage()"><i
+                                            class="fas fa-arrow-alt-circle-right"></i></button>
                                 </div>
                             </div>
                             <a href="#" class="close-btn" id="close-rules"><i class="fas fa-times"></i></a>
@@ -236,7 +302,8 @@
                             will grow over time. With graphic design created specially for this website, and more food
                             designs in development.
                             <br>
-                            Want to hear more? Well then go to the <button class="nav-btn contact-btn" data-target="#contact-section">Contact page</button> and send a message this way,
+                            Want to hear more? Well then go to the <button class="nav-btn contact-btn"
+                                data-target="#contact-section">Contact page</button> and send a message this way,
                             I would love to hear from you.
                         </p>
                         <p>
@@ -306,34 +373,35 @@
                     <div class="form-section">
                         <form class="form-container" action="https://formsubmit.co/snakesnackwebsite@gmail.com"
                             method="POST">
-    
+
                             <div class="input-wrapper">
                                 <label for="fuName">Full Name</label>
-                                <input id="fuName" type="text" name="Full_name" class="input" placeholder="e.g. John Doe"
-                                    required>
+                                <input id="fuName" type="text" name="Full_name" class="input"
+                                    placeholder="e.g. John Doe" required>
                                 <label for="email">Email</label>
                                 <input id="email" type="email" name="Email_address" class="input"
                                     placeholder="e.g. johndoe@gmail.com" required>
                             </div>
-    
+
                             <div class="radio-wrapper">
                                 <label for="feedback"><input id="feedback" type="radio" name="radioBtn"
                                         class="radio feedback" required> Feedback</label>
-                                <label for="Message"><input id="Message" type="radio" name="radioBtn" class="radio message">
+                                <label for="Message"><input id="Message" type="radio" name="radioBtn"
+                                        class="radio message">
                                     Message</label>
                                 <label for="collaboration"><input id="collaboration" type="radio" name="radioBtn"
                                         class="radio collaboration">Collaboration</label>
                             </div>
-    
+
                             <div class="form-end">
                                 <label for="teArea">Message</label>
                                 <textarea id="teArea" name="textArea" placeholder="Write your message here..."
                                     maxlength="550" required></textarea>
                                 <input type="submit" value="Send" class="contactBtn">
                             </div>
-    
+
                         </form>
-    
+
                     </div>
 
                 </section>
@@ -358,9 +426,9 @@
     <script src="./assets/js/welcome.js"></script>
     <script src="./assets/js/sections.js"></script>
     <script src="./assets/js/sound.js"></script>
-    <script src="./assets/js/rules-modal.js"></script>
     <script src="./assets/js/copyrights.js"></script>
-    <script src="./assets/js/menu.js"></script>
+    <script src="./assets/js/rules-modal.js"></script>
+    <script src="./assets/js/rule-book.js"></script>
 
 </body>
 
