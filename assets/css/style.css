@@ -351,6 +351,7 @@ li {
 }
 
 .foods {
+    display: inline-flex;
     margin-top: 3%;
 }
 
@@ -706,64 +707,64 @@ textarea {
         margin: 0 5%;
     }
 
-    .rules-container {
+    /* .rules-container {
         min-height: 80%;
         max-height: 80%;
         padding: 2%;
         overflow: auto;
         margin: 0 auto;
         margin-top: 2.3%;
-    }
+    } */
 
-    .rules-container h2 {
+    /* .rules-container h2 {
         font-size: 250%;
-    }
+    } */
 
-    .rules-container h3 {
+    /* .rules-container h3 {
         font-size: 150%;
         font-weight: 500;
         margin: 1% 0;
-    }
+    } */
 
-    .rules-container h3 span {
+    /* .rules-container h3 span {
         font-weight: 600;
-    }
+    } */
 
-    .rules-container h4 {
+    /* .rules-container h4 {
         font-size: 140%;
         padding: 2% 0;
-    }
+    } */
 
-    .rules-container p {
+    /* .rules-container p {
         font-size: 120%;
-    }
+    } */
 
-    .foods {
+    /* .foods {
         margin-top: 3%;
-    }
+    } */
 
-    .foods span {
+    /* .foods span {
         font-size: 150%;
         font-weight: 600;
-    }
+    } */
 
-    .apple {
+    /* .apple {
         width: 20%;
-    }
+    } */
 
-    .close-btn {
+    /* .close-btn {
         width: 20px;
         height: 20px;
         font-size: 200%;
-    }
+    } */
 
-    #close-rules {
+    /* #close-rules {
         margin: 3.3% 24% 0 0;
-    }
+    } */
 
-    #close-rules:hover {
+    /* #close-rules:hover {
         font-size: 250%;
-    }
+    } */
 
     /* START OF ABOUT PAGE */
 
