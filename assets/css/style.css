@@ -250,7 +250,7 @@ li {
 
 .rules-modal {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: none;
     position: fixed;
     left: 0;
@@ -260,9 +260,9 @@ li {
 }
 
 .rules-container {
-    width: 80%;
-    min-height: 70%;
-    max-height: 90%;
+    width: 50%;
+    height: 85vh;
+    position: relative;
     background-image: linear-gradient(to bottom right, #969697, #AAA9AD, #DFDEE0, #FFF, #A9ACAD, #969697, #F0F0F0, #969697);
     background-image: url(../images/scales.webp);
     background-position: center;
@@ -271,22 +271,26 @@ li {
     box-shadow: 0px 0px 15px #000;
     text-align: center;
     color: #000;
+    overflow: hidden;
     padding: 2%;
-    overflow: auto;
     margin: 0 auto;
-    margin-top: 2.3%;
+    margin-top: 20px;
 }
 
 .book {
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    overflow: auto;
+    width: 90%;
+    height: 95%;
+    position: relative;
+    overflow: scroll;
+    padding: 4%;
+}
+
+.book::-webkit-scrollbar {
+    width: 0;
+}
+
+.book::-webkit-scrollbar-thumb {
+    background-color: transparent;
 }
 
 .page {
@@ -298,6 +302,7 @@ li {
 }
 
 .navigation {
+    position: sticky;
     margin-top: 20px;
 }
 
@@ -308,7 +313,7 @@ li {
     border: none;
     background-color: transparent;
     cursor: pointer;
-    margin-bottom: 9%;
+    margin-bottom: 3%;
 }
 
 .backBtn:hover, .nextBtn:hover {
@@ -318,12 +323,10 @@ li {
 .backBtn {
     display: none;
     left: 0;
-    margin-left: 10%;
 }
 
 .nextBtn {
     right: 0;
-    margin-right: 10%;
 }
 
 
@@ -361,7 +364,7 @@ li {
 }
 
 .apple {
-    width: 20%;
+    width: 30%;
 }
 
 /* THE CLOSE BUTTONS FOR RULES AND SETTINGS */
@@ -382,7 +385,7 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 3.7% 9% 0 0;
+    margin: 3.7% 4.5% 0 0;
 }
 
 #closeSettings {
@@ -1038,6 +1041,34 @@ textarea {
         margin: 3% 4% 0 0;
     }
 
+    .menu-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .settingsBtn {
+        display: none; /* Hide the settings button on smaller screens */
+    }
+
+    .overlay {
+        display: none; /* Hide the settings overlay on smaller screens */
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-around;
+    }
+
+    .social-links-menu {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
     /* START OF HOME PAGE */
 
     .landing-card {
@@ -1171,45 +1202,45 @@ textarea {
         margin: 5% 20%;
     }
     
-    .rules-container {
+    /* .rules-container {
         width: 80%;
         padding: 2% 4%;
         margin-top: 13.5%;
-    }
+    } */
     
-    .rules-container h2 {
+    /* .rules-container h2 {
         font-size: 250%;
-    }
+    } */
 
-    .rules-container h3 span {
+    /* .rules-container h3 span {
         font-size: 140%;
-    }
+    } */
     
-    .rules-container h3 {
+    /* .rules-container h3 {
         font-size: 100%;
-    }
+    } */
     
-    .rules-container h4 {
+    /* .rules-container h4 {
         font-size: 120%;
         padding: 3% 0;
-    }
+    } */
     
-    .rules-container p {
+    /* .rules-container p {
         font-size: 100%;
-    }
+    } */
     
-    .foods {
+    /* .foods {
         margin-top: 5%;
-    }
+    } */
     
-    .apple {
+    /* .apple {
         width: 25%;
         padding: 2.5% 0;
-    }
+    } */
     
-    #close-rules {
+    /* #close-rules {
         margin: 17% 11% 0 0;
-    }
+    } */
 
     /* START OF FOOTER */
 

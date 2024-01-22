@@ -68,8 +68,9 @@
             <div class="menu-container">
                 <div class="overlayMenu">
                     <div class="menu" id="toggleMenu">
-                        <a href="#" class="close-btn" onclick="closeToggleMenu()" aria-label="close hamburger menu"><i
-                                class="fas fa-times"></i></a>
+                        <a href="#" class="close-btn" onclick="closeToggleMenu()" aria-label="close hamburger menu">
+                            <i class="fas fa-times"></i>
+                        </a>
 
                         <ul class="pages">
                             <li>
@@ -82,6 +83,28 @@
                                 <button class="nav-btn menu-li" data-target="#contact-section">Contact</button>
                             </li>
                         </ul>
+
+                        <fieldset class="settings-wrapper-menu">
+                            <legend><i class="fas fa-cog"></i></legend>
+                            <div class="settingBtns">
+                                <div class="settingBtnborder">
+                                    <button class="btnControls music" id="musicBtnOffMenu">
+                                        <i class="fas fa-pause"></i>
+                                    </button>
+                                    <button class="btnControls music" id="musicBtnOnMenu">
+                                        <i class="fas fa-music"></i>
+                                    </button>
+                                </div>
+                                <div class="settingBtnborder">
+                                    <button class="sound btnControls" onclick="endMute()" id="soundBtnOffMenu">
+                                        <i class="fas fa-volume-mute"></i>
+                                    </button>
+                                    <button class="sound btnControls" onclick="startMute()" id="soundBtnOnMenu">
+                                        <i class="fas fa-volume-up"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </fieldset>
 
                         <ul class="social-links-menu">
                             <li>
@@ -112,24 +135,23 @@
                     <legend><i class="fas fa-cog"></i></legend>
                     <div class="settingBtns">
                         <div class="settingBtnborder">
-                            <button class="btnControls music" id="musicBtnOff">
+                            <button class="btnControls music music-btn" id="musicBtnOff">
                                 <i class="fas fa-pause"></i>
                             </button>
-                            <button class="btnControls music" id="musicBtnOn">
+                            <button class="btnControls music music-btn hidden" id="musicBtnOn">
                                 <i class="fas fa-music"></i>
                             </button>
                         </div>
                         <div class="settingBtnborder">
-                            <button class="sound btnControls" onclick="endMute()" id="soundBtnOff">
+                            <button class="sound btnControls sound-btn" onclick="endMute()" id="soundBtnOff">
                                 <i class="fas fa-volume-mute"></i>
                             </button>
-                            <button class="sound btnControls" onclick="startMute()" id="soundBtnOn">
+                            <button class="sound btnControls sound-btn hidden" onclick="startMute()" id="soundBtnOn">
                                 <i class="fas fa-volume-up"></i>
                             </button>
                         </div>
                     </div>
-                    <a href="#" class="close-btn" onclick="closeSettings()" id="closeSettings"><i
-                            class="fas fa-times"></i></a>
+                    <a href="#" class="close-btn" onclick="closeSettings()" id="closeSettings"><i class="fas fa-times"></i></a>
                 </fieldset>
             </div>
         </header>
@@ -157,7 +179,7 @@
                     <!-- THE START OF RULES MODAL SECTION -->
                     <div class="rules-modal">
                         <div class="rules-container">
-                            <div>
+                            <div class="book">
                                 <div class="page" id="page1">
                                     <h2>Welcome to Snake Snack!</h2>
                                     <br>
@@ -227,12 +249,12 @@
                                     </div>
                                 </div>
 
-                                <div class="navigation">
-                                    <button class="backBtn" id="prevPage" onclick="prevPage()"><i
-                                            class="fas fa-arrow-alt-circle-left"></i></button>
-                                    <button class="nextBtn" id="nextPage" onclick="nextPage()"><i
-                                            class="fas fa-arrow-alt-circle-right"></i></button>
-                                </div>
+                            </div>
+                            <div class="navigation">
+                                <button class="backBtn" id="prevPage" onclick="prevPage()"><i
+                                        class="fas fa-arrow-alt-circle-left"></i></button>
+                                <button class="nextBtn" id="nextPage" onclick="nextPage()"><i
+                                        class="fas fa-arrow-alt-circle-right"></i></button>
                             </div>
                             <a href="#" class="close-btn" id="close-rules"><i class="fas fa-times"></i></a>
                         </div>
