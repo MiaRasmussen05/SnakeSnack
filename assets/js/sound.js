@@ -6,11 +6,15 @@ const gameOverSound = new Audio('assets/sounds/gameover.mp3');
 let musicBtnPlay = document.getElementsByClassName("music");
 let musicOff = document.getElementById("musicBtnOff");
 let musicOn = document.getElementById("musicBtnOn");
+let musicOffMenu = document.getElementById("musicBtnOffMenu")
+let musicOnMenu = document.getElementById("musicBtnOnMenu")
 // For mute sound effects button
 let muted = false;
 let soundBtnPlay = document.getElementsByClassName("sound");
 let soundOff = document.getElementById("soundBtnOff");
 let soundOn = document.getElementById("soundBtnOn");
+let soundOffMenu = document.getElementById("soundBtnOffMenu")
+let soundOnMenu = document.getElementById("soundBtnOnMenu")
 
 
 //For loop that makes it possible for both buttons to be clicked
@@ -23,10 +27,14 @@ for (var i = 0; i < musicBtnPlay.length; i++) {
         music.loop = true;
         musicOn.style.display = 'block';
         musicOff.style.display = 'none';
+        musicOnMenu.style.display = 'block';
+        musicOffMenu.style.display = 'none';
       } else {
         music.pause();
         musicOff.style.display = 'block';
         musicOn.style.display = 'none';
+        musicOffMenu.style.display = 'block';
+        musicOnMenu.style.display = 'none';
       }
     });
   }
@@ -43,10 +51,14 @@ for (var i = 0; i < musicBtnPlay.length; i++) {
         startMute();
         soundOff.style.display = 'block';
         soundOn.style.display = 'none';
+        soundOffMenu.style.display = 'block';
+        soundOnMenu.style.display = 'none';
       } else {
         endMute();
         soundOff.style.display = 'none';
         soundOn.style.display = 'block';
+        soundOffMenu.style.display = 'none';
+        soundOnMenu.style.display = 'block';
       }
     });
   }

@@ -127,13 +127,35 @@ legend {
     line-height: 50px;
 }
 
+.fa-music, .fa-pause,
+.fa-volume-mute, .fa-volume-up {
+    position: relative;
+    margin: auto auto;
+}
+
+.fa-music::before,
+.fa-pause::before,
+.fa-volume-mute::before,
+.fa-volume-up::before {
+    position: relative;
+    margin: auto auto;
+}
+
 #musicBtnOff {
     margin: 4.5px 0 15% 2%;
 }
 
-#musicBtnOn, #soundBtnOn  {
+#musicBtnOffMenu, #soundBtnOffMenu {
+    margin: 2.5px 0 0 1.5%;
+}
+
+#musicBtnOn, #musicBtnOnMenu, #soundBtnOn  {
     display: none;
     margin: 4.5px 0 15% 77.5%;
+}
+
+#musicBtnOnMenu, #soundBtnOnMenu {
+    margin: 2.5px 0 0 86%;
 }
 
 #soundBtnOff {
@@ -152,22 +174,6 @@ legend {
     inset -1px -1px 3px #7c7c7c,
     inset -1px 1px 3px #111111,
     inset 1px -1px 3px #7c7c7c;
-}
-
-#musicBtnOff i, #soundBtnOff i{
-    padding: 18% 0 0 22.5%;
-}
-
-#musicBtnOff i:before {
-    padding: 18% 17px 0 0;
-}
-
-#musicBtnOn i {
-    padding: 17% 4% 0 0;
-}
-
-#soundBtnOn i{
-    padding: 18% 0 0 15%;
 }
 
 /* THE START OF GAMEBOARD SECTION */
@@ -611,7 +617,7 @@ legend {
         height: 57px;
         font-size: 200%;
         border-radius: 15px;
-        line-height: 57px;
+        line-height: 30px;
     }
     
     #upBtn {
@@ -673,7 +679,7 @@ legend {
         width: 50px;
         height: 50px;
         font-size: 200%;
-        line-height: 50px;
+        line-height: 0px;
         border-radius: 50%;
     }
 
@@ -745,6 +751,26 @@ legend {
         margin: 42px 0 0 0;
     }
 
+    legend {
+        width: 35px;
+        height: 35px;
+        font-size: 130%;
+    }
+
+    .settingBtnborder {
+        width: 70%;
+        height: 40px;
+        display: inline-flex;
+        background-color: #1e1e1f;
+        box-shadow: 2px 1px 2px #DFDEE0,
+        -2px -1px 2px #1d1d1d,
+        inset -5px -5px 10px #000000,
+        inset 3px 3px 10px #DFDEE0;
+        border-radius: 30px;
+        padding-right: 1%;
+        margin: 4% 0 5% 1%;
+    }
+
     /* START OF GAMEBOARD */
 
     .game-border {
@@ -785,14 +811,16 @@ legend {
         right: 0;
         margin: 61.2% 25% 0 0;
     }
-    
+
     .btnControls {
-        width: 50px;
-        height: 50px;
-        border-radius: 10px;
-        font-size: 160%;
-        font-weight: 700;
-        line-height: 45px;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        font-size: 90%;
+    }
+
+    #musicBtnOnMenu, #soundBtnOnMenu  {
+        display: none;
     }
 
     #upBtn {
@@ -851,6 +879,13 @@ legend {
         border-top-left-radius: 10px;
         margin-top: -48px;
         margin-left: 2px;
+    }
+
+    .fa-music, .fa-pause,
+    .fa-volume-mute, .fa-volume-up {
+        position: relative;
+        font-size: 100%;
+        margin: auto auto;
     }
 }
 
@@ -920,10 +955,6 @@ legend {
     .controls {
         margin: 0 18%;
         margin-top: 86%;
-    }
-
-    #musicBtnOn, #soundBtnOn  {
-        margin: 4.5px 0 15% 65.5%;
     }
 }
 
