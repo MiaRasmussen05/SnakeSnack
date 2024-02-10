@@ -127,6 +127,7 @@ li {
     text-decoration: none;
     font-size: 120%;
     color: #DFDEE0;
+    cursor: pointer;
     margin: 0 40px;
 }
 
@@ -463,6 +464,7 @@ footer {
 .contact-btn {
     font-size: 100%;
     font-weight: bold;
+    cursor: pointer;
     padding: 0;
     margin: 0;
 }
@@ -1031,6 +1033,12 @@ textarea {
 
     .social-links-menu li a {
         color: #DFDEE0;
+    }
+
+    .social-links-menu li a:hover {
+        color: #681E1E;
+        cursor: pointer;
+        text-shadow: 0 0 7px #FFF;
     }
 
     .menu .close-btn {

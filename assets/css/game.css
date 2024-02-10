@@ -180,6 +180,7 @@ legend {
 
 .level-message {
     width: 95vw;
+    max-width: 75vw;
     position: absolute;
     top: 50%;
     color: #FFF;
@@ -211,7 +212,7 @@ legend {
 }
 
 .pause-message, .start-game-message {
-    width: 95vw;
+    max-width: 75vw;
     display: none;
     position: absolute;
     top: 50%;
@@ -225,7 +226,6 @@ legend {
 }
 
 .start-game-message {
-    width: 20%;
     display: block;
     font-size: 400%;
     text-shadow: 1px 1px 1px #353535,
@@ -248,7 +248,6 @@ legend {
 }
 
 .show-pause {
-    width: 20%;
     display: block;
 }
 
@@ -469,6 +468,7 @@ legend {
     position: absolute;
     border-radius: 20px;
     transform: rotate(45deg);
+    line-height: 0;
     z-index: -1;
 }
 
@@ -619,40 +619,44 @@ legend {
         border-radius: 15px;
         line-height: 30px;
     }
+
+    .pointBtn {
+        line-height: 60px;
+    }
     
     #upBtn {
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
-        margin-bottom: 14px;
+        margin-bottom: 18px;
     }
     
     #leftBtn {
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
-        margin-right: 19px;
+        margin-right: 17px;
     }
     
     #rightBtn {
         border-top-right-radius: 20px;
         border-bottom-right-radius: 20px;
-        margin-left: 14px;
+        margin-left: 17px;
     }
     
     #downBtn {
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
-        margin-top: 12px;
+        margin-top: 18px;
     }
     
-    .point{
+    .point {
         width: 51px;
         height: 51px;
     }
     
     .point-top {
         border-bottom-right-radius: 10px;
-        margin-top: -54px;
-        margin-left: 2.5px;
+        margin-top: -58px;
+        margin-left: 3.5px;
     }
     
     .point-left {
@@ -664,7 +668,7 @@ legend {
     .point-right {
         border-bottom-left-radius: 10px;
         margin-top: 3px;
-        margin-left: 4px;
+        margin-left: 7px;
     }
     
     .point-down {
@@ -729,11 +733,19 @@ legend {
         margin-top: 0%;
         margin-left: 47%;
     }
+
+    .pause-message, .start-game-message, .level-message {
+        font-size: 400%;
+    }
     
     /* START OF CONTROLS */
 
     .controls {
         margin: 15% 6% 0 0;
+    }
+
+    .btnHideControls {
+        font-size: 200%;
     }
 }
 
@@ -796,6 +808,10 @@ legend {
         transform: translate(-30%, -100%);
     }
 
+    .pause-message, .start-game-message, .level-message {
+        font-size: 300%;
+    }
+
     .restart {
         width: 50px;
         height: 50px;
@@ -809,7 +825,7 @@ legend {
 
     .controls {
         right: 0;
-        margin: 61.2% 25% 0 0;
+        margin: 61.5% 25% 0 0;
     }
 
     .btnControls {
@@ -819,66 +835,70 @@ legend {
         font-size: 90%;
     }
 
+    .pointBtn {
+        line-height: 35px;
+    }
+
     #musicBtnOnMenu, #soundBtnOnMenu  {
         display: none;
     }
 
     #upBtn {
         height: 38px;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
         margin-bottom: 4px;
     }
     
     #leftBtn {
         width: 38px;
-        border-top-left-radius: 15px;
-        border-bottom-left-radius: 15px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
         margin-right: 4px;
     }
     
     #rightBtn {
         width: 38px;
-        border-top-right-radius: 15px;
-        border-bottom-right-radius: 15px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
         margin-left: 4px;
     }
     
     #downBtn {
         height: 38px;
-        border-bottom-left-radius: 15px;
-        border-bottom-right-radius: 15px;
-        margin-top: 2px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        margin-top: 4px;
     }
     
     .point{
-        width: 46px;
-        height: 46px;
-        border-radius: 20px;
+        width: 35px;
+        height: 35px;
+        border-radius: 45px;
     }
     
     .point-top {
         border-bottom-right-radius: 10px;
         margin-top: -39px;
-        margin-left: 2px;
+        margin-left: 0;
     }
     
     .point-left {
         border-top-right-radius: 10px;
-        margin-top: 2px;
-        margin-left: 4px;
+        margin-top: 0;
+        margin-left: 3px;
     }
     
     .point-right {
         border-bottom-left-radius: 10px;
-        margin-top: 2px;
-        margin-left: -6px;
+        margin-top: 0;
+        margin-left: 4px;
     }
     
     .point-down {
         border-top-left-radius: 10px;
-        margin-top: -48px;
-        margin-left: 2px;
+        margin-top: -38px;
+        margin-left: 0px;
     }
 
     .fa-music, .fa-pause,
@@ -941,6 +961,10 @@ legend {
         font-size: 200%;
         transform: translate(-55%, -70%);
     }
+
+    .pause-message, .start-game-message, .level-message {
+        font-size: 250%;
+    }
     
     .restart {
         width: 50px;
@@ -955,6 +979,10 @@ legend {
     .controls {
         margin: 0 18%;
         margin-top: 86%;
+    }
+
+    .btnHideControls {
+        font-size: 150%;
     }
 }
 
@@ -990,6 +1018,10 @@ legend {
 
     .game-over {
         transform: translate(-50%, -30%);
+    }
+
+    .pause-message, .start-game-message, .level-message {
+        font-size: 200%;
     }
 
     /* START OF CONTROLS */
